@@ -1,444 +1,667 @@
 {
-  "schema_version": 1,
-  "updated_at": "2026-09-24T15:20:34.456873+00:00",
+  "schema_version": 2,
+  "updated_at": "2026-09-24T15:34:21.983127+00:00",
   "date": "2026-09-24",
-  "last_attempt_at": "2026-09-24T15:20:34.456873+00:00",
+  "last_attempt_at": "2026-09-24T15:34:21.983127+00:00",
   "status": "ok",
-  "summary_mode": "basic",
-  "candidate_count": 81,
+  "summary_mode": "documented",
+  "candidate_count": 86,
   "warnings": [],
   "projects": [
     {
-      "name": "superdesigndev/treg",
-      "url": "https://github.com/superdesigndev/treg",
-      "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 470 Star；创建约 72 天，累计 3,018 Star（不等于当日增长）。",
-      "language": "Python",
-      "stars": 3018,
-      "stars_today": 470,
+      "name": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+      "summary_zh": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "JavaScript",
+      "stars": 47167,
+      "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
       "topics": [
-        "agents",
-        "api-keys",
-        "cli",
-        "credentials",
+        "api-client",
+        "api-testing",
+        "automation",
         "developer-tools",
-        "dsh-plugin",
-        "mcp",
-        "proxy"
+        "git",
+        "graphql-client",
+        "http-client",
+        "javascript"
       ],
-      "category": "Agent",
-      "score": 127.03,
+      "category": "编程开发",
+      "score": 14.0,
       "is_new": true,
       "sources": [
-        "trending",
-        "tracked"
+        "practical-library"
       ],
-      "created_at": "2026-07-15T13:38:07Z"
+      "created_at": "2022-09-27T20:51:45Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "调试 API，并把请求集合和代码一起管理",
+        "summary": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
+        "audience": "后端、前端和测试工程师",
+        "difficulty": "安装即用",
+        "cost": "有开源版本和付费功能；按官方功能表确认所需版本",
+        "api_key": "被测试的 API 若要求认证，仍需它自己的凭据",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "本地桌面客户端；具体系统要求以下载页为准",
+        "steps": [
+          "通过官方站点下载客户端，先确认开源版能覆盖需求。",
+          "创建本地请求集合，添加一个你有权限调用的测试接口。",
+          "发送请求并检查响应；使用变量管理凭据，不提交真实密钥。"
+        ],
+        "result": "一组可重复执行、可纳入版本管理的 API 测试请求。",
+        "limitations": "它不会替你提供后端接口；高级功能可能属于付费版本，私密变量不应提交到公开仓库。",
+        "entry_url": "https://www.usebruno.com",
+        "entry_label": "官网与版本说明",
+        "demo": "桌面客户端；是否需要某项付费功能请核对官网",
+        "sources": [
+          "https://github.com/usebruno/bruno",
+          "https://www.usebruno.com"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 81.17
     },
     {
-      "name": "vectorize-io/hindsight",
-      "url": "https://github.com/vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,607 Star。",
-      "language": "Python",
-      "stars": 27199,
-      "stars_today": 1607,
+      "name": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Dart",
+      "stars": 92599,
+      "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
       "topics": [
-        "agentic-ai",
-        "agents",
-        "ai-memory",
-        "memory"
+        "dart",
+        "file-sharing",
+        "flutter",
+        "flutter-apps"
       ],
-      "category": "Agent",
-      "score": 115.44,
+      "category": "办公自动化",
+      "score": 0.0,
       "is_new": true,
       "sources": [
-        "trending",
-        "tracked"
+        "practical-library"
       ],
-      "created_at": "2025-10-30T11:49:48Z"
+      "created_at": "2022-12-16T00:46:07Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "手机和电脑互传文件，不经过聊天软件",
+        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
+        "difficulty": "安装即用",
+        "cost": "免费开源；局域网传输不需要云端订阅",
+        "api_key": "基础传输不需要 API Key",
+        "platform": "Windows / macOS / Linux / Android / iOS",
+        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
+        "steps": [
+          "在发送和接收设备上，从官方入口安装 LocalSend。",
+          "让两台设备接入同一局域网，并打开应用。",
+          "选择一个测试文件和接收设备，在接收端确认保存。"
+        ],
+        "result": "测试文件出现在接收设备中，可直接打开。",
+        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
+        "entry_url": "https://localsend.org",
+        "entry_label": "官网下载",
+        "demo": "本地应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/localsend/localsend"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 80.0
     },
     {
-      "name": "google/ax",
-      "url": "https://github.com/google/ax",
-      "description": "Google's open agentic orchestration runtime",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,376 Star。",
-      "language": "Go",
-      "stars": 9891,
-      "stars_today": 1376,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "Agent",
-      "score": 114.05,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2026-03-30T17:55:01Z"
-    },
-    {
-      "name": "dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,060 Star。",
-      "language": "TypeScript",
-      "stars": 17249,
-      "stars_today": 1060,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "board",
-        "collaboration",
-        "data-table",
-        "doc",
-        "docx",
-        "excel",
-        "grid",
-        "pdf"
-      ],
-      "category": "Agent",
-      "score": 111.7,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2022-09-29T12:09:14Z"
-    },
-    {
-      "name": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
-      "description": "An agentic skills framework & software development methodology that works.",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 606 Star。",
-      "language": "Shell",
-      "stars": 291055,
-      "stars_today": 606,
+      "name": "HandBrake/HandBrake",
+      "url": "https://github.com/HandBrake/HandBrake",
+      "description": "HandBrake's development repository",
+      "summary_zh": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "C",
+      "stars": 24487,
+      "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
       "topics": [
-        "ai",
-        "brainstorming",
-        "coding",
-        "obra",
-        "sdlc",
-        "skills",
-        "subagent-driven-development",
-        "superpowers"
+        "gplv2",
+        "multi-platform",
+        "video-transcoding"
       ],
-      "category": "Agent",
-      "score": 106.68,
+      "category": "内容创作",
+      "score": 0.0,
       "is_new": true,
       "sources": [
-        "trending",
-        "tracked"
+        "practical-library"
       ],
-      "created_at": "2025-10-09T19:45:18Z"
+      "created_at": "2015-08-22T16:32:28Z",
+      "guide": {
+        "category": "内容创作",
+        "task": "把视频转成更方便分享的格式和大小",
+        "summary": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
+        "audience": "需要处理已有视频的普通用户和内容创作者",
+        "difficulty": "安装即用",
+        "cost": "免费开源",
+        "api_key": "本地视频转换不需要 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "编码速度取决于 CPU、视频长度和所选编码器；先用短片测试",
+        "steps": [
+          "通过官方站点安装 HandBrake，打开一段测试视频。",
+          "选择合适的预设，设置输出文件位置，先预览画质。",
+          "启动编码，完成后比较输出视频的体积和清晰度。"
+        ],
+        "result": "获得一个新的可播放视频文件，并能比较处理前后的大小。",
+        "limitations": "压缩效果取决于原文件和编码参数，不保证每次都变小；它不是完整的时间线视频剪辑器。",
+        "entry_url": "https://handbrake.fr/docs/en/latest/introduction/quick-start.html",
+        "entry_label": "查看快速上手",
+        "demo": "桌面应用；操作流程见官方图文指南",
+        "sources": [
+          "https://github.com/HandBrake/HandBrake",
+          "https://handbrake.fr/docs/en/latest/introduction/quick-start.html"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 80.0
     },
     {
-      "name": "strands-agents/harness-sdk",
-      "url": "https://github.com/strands-agents/harness-sdk",
-      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 463 Star。",
-      "language": "Python",
-      "stars": 8131,
-      "stars_today": 463,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "agent-framework",
-        "agentic",
-        "agentic-ai",
-        "agents",
-        "ai",
-        "ai-agents",
-        "anthropic",
-        "autonomous-agents"
-      ],
-      "category": "Agent",
-      "score": 104.26,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2025-05-14T19:59:51Z"
-    },
-    {
-      "name": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 310 Star。",
-      "language": "Python",
-      "stars": 56119,
-      "stars_today": 310,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "agents",
-        "ai",
-        "ai-agents",
-        "ai-engineering",
-        "computer-vision",
-        "course",
-        "deep-learning",
-        "from-scratch"
-      ],
-      "category": "Agent",
-      "score": 100.66,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2026-03-18T18:38:02Z"
-    },
-    {
-      "name": "anthropics/financial-services",
-      "url": "https://github.com/anthropics/financial-services",
-      "description": "",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 510 Star。",
-      "language": "Python",
-      "stars": 37249,
-      "stars_today": 510,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "其他开源",
-      "score": 91.13,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2026-02-23T19:24:50Z"
-    },
-    {
-      "name": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 415 Star。",
-      "language": "Python",
-      "stars": 50198,
-      "stars_today": 415,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "其他开源",
-      "score": 89.28,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2026-03-08T13:52:57Z"
-    },
-    {
-      "name": "mvt-project/mvt",
-      "url": "https://github.com/mvt-project/mvt",
-      "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 275 Star。",
-      "language": "Python",
-      "stars": 14633,
-      "stars_today": 275,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "android",
-        "forensics",
-        "forensics-tools",
-        "ios",
-        "mobile",
-        "security"
-      ],
-      "category": "其他开源",
-      "score": 85.58,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2021-07-16T05:50:44Z"
-    },
-    {
-      "name": "FxEmbed/FxEmbed",
-      "url": "https://github.com/FxEmbed/FxEmbed",
-      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 165 Star。",
-      "language": "TypeScript",
-      "stars": 5297,
-      "stars_today": 165,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "其他开源",
-      "score": 81.01,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2022-07-13T23:59:04Z"
-    },
-    {
-      "name": "leejet/stable-diffusion.cpp",
-      "url": "https://github.com/leejet/stable-diffusion.cpp",
-      "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
-      "summary_zh": "这是一个 AI 或大模型相关的开源项目，适合关注模型应用、推理和开发的人进一步评估。具体用途请结合下方原始简介与仓库文档查看。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 33 Star。",
+      "name": "audacity/audacity",
+      "url": "https://github.com/audacity/audacity",
+      "description": "Audio Editor",
+      "summary_zh": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
       "language": "C++",
-      "stars": 7179,
-      "stars_today": 33,
+      "stars": 18554,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "audio",
+        "cross-platform",
+        "editor",
+        "gplv2",
+        "wxwidgets-applications"
+      ],
+      "category": "内容创作",
+      "score": 14.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2015-03-26T10:46:17Z",
+      "guide": {
+        "category": "内容创作",
+        "task": "录制和剪掉音频里不需要的片段",
+        "summary": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
+        "audience": "播客、口播和音频内容创作者",
+        "difficulty": "需要学习",
+        "cost": "核心编辑器免费开源；可选外部服务另行核对",
+        "api_key": "基础本地录音编辑不需要 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "录音需要可用麦克风；长音频和多轨工程更依赖内存与磁盘",
+        "steps": [
+          "从官网安装稳定版本，避免直接编译开发分支。",
+          "导入一段测试录音，试听并选中不需要的片段。",
+          "删除片段后重新试听，保存工程并导出音频副本。"
+        ],
+        "result": "得到一段经过剪辑的音频，且保留可继续修改的工程。",
+        "limitations": "需要熟悉音轨和导出设置；仓库开发分支正进行界面重构，可能与稳定版说明不同。",
+        "entry_url": "https://www.audacityteam.org",
+        "entry_label": "打开官网",
+        "demo": "桌面应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/audacity/audacity"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 73.17
+    },
+    {
+      "name": "OpenRefine/OpenRefine",
+      "url": "https://github.com/OpenRefine/OpenRefine",
+      "description": "OpenRefine is a free, open source power tool for working with messy data and improving it",
+      "summary_zh": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Java",
+      "stars": 12007,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "data-analysis",
+        "data-science",
+        "data-wrangling",
+        "datacleaning",
+        "datacleansing",
+        "datajournalism",
+        "datamining",
+        "java"
+      ],
+      "category": "办公自动化",
+      "score": 0.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2012-10-15T02:22:48Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "把表格里写法不一致的数据整理干净",
+        "summary": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
+        "audience": "处理名单、调查结果和业务数据的办公用户",
+        "difficulty": "需要学习",
+        "cost": "免费开源；连接外部数据服务时需另查该服务条款",
+        "api_key": "基础本地清理不需要 API Key",
+        "platform": "Windows / macOS / Linux；本机浏览器界面",
+        "hardware": "内存需求随数据量增加；按下载包说明确认 Java 要求",
+        "steps": [
+          "从官方站点下载适合系统的版本，按运行指南启动。",
+          "先用一份 CSV 副本创建项目，检查列类型和异常值。",
+          "尝试统一一列名称的写法，检查结果后导出新文件。"
+        ],
+        "result": "得到一份经过检查的新表格，原始数据副本仍保留。",
+        "limitations": "不是 Excel 的完整替代品；高级转换需要学习表达式。外部数据匹配功能可能发送所选数据。",
+        "entry_url": "https://openrefine.org/docs/manual/running",
+        "entry_label": "查看启动指南",
+        "demo": "在本机运行后通过浏览器使用",
+        "sources": [
+          "https://github.com/OpenRefine/OpenRefine",
+          "https://openrefine.org/docs/manual/running"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 72.0
+    }
+  ],
+  "library": [
+    {
+      "name": "usebruno/bruno",
+      "url": "https://github.com/usebruno/bruno",
+      "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+      "summary_zh": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "JavaScript",
+      "stars": 47167,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "api-client",
+        "api-testing",
+        "automation",
+        "developer-tools",
+        "git",
+        "graphql-client",
+        "http-client",
+        "javascript"
+      ],
+      "category": "编程开发",
+      "score": 14.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2022-09-27T20:51:45Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "调试 API，并把请求集合和代码一起管理",
+        "summary": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
+        "audience": "后端、前端和测试工程师",
+        "difficulty": "安装即用",
+        "cost": "有开源版本和付费功能；按官方功能表确认所需版本",
+        "api_key": "被测试的 API 若要求认证，仍需它自己的凭据",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "本地桌面客户端；具体系统要求以下载页为准",
+        "steps": [
+          "通过官方站点下载客户端，先确认开源版能覆盖需求。",
+          "创建本地请求集合，添加一个你有权限调用的测试接口。",
+          "发送请求并检查响应；使用变量管理凭据，不提交真实密钥。"
+        ],
+        "result": "一组可重复执行、可纳入版本管理的 API 测试请求。",
+        "limitations": "它不会替你提供后端接口；高级功能可能属于付费版本，私密变量不应提交到公开仓库。",
+        "entry_url": "https://www.usebruno.com",
+        "entry_label": "官网与版本说明",
+        "demo": "桌面客户端；是否需要某项付费功能请核对官网",
+        "sources": [
+          "https://github.com/usebruno/bruno",
+          "https://www.usebruno.com"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 81.17
+    },
+    {
+      "name": "HandBrake/HandBrake",
+      "url": "https://github.com/HandBrake/HandBrake",
+      "description": "HandBrake's development repository",
+      "summary_zh": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "C",
+      "stars": 24487,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "gplv2",
+        "multi-platform",
+        "video-transcoding"
+      ],
+      "category": "内容创作",
+      "score": 0.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2015-08-22T16:32:28Z",
+      "guide": {
+        "category": "内容创作",
+        "task": "把视频转成更方便分享的格式和大小",
+        "summary": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
+        "audience": "需要处理已有视频的普通用户和内容创作者",
+        "difficulty": "安装即用",
+        "cost": "免费开源",
+        "api_key": "本地视频转换不需要 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "编码速度取决于 CPU、视频长度和所选编码器；先用短片测试",
+        "steps": [
+          "通过官方站点安装 HandBrake，打开一段测试视频。",
+          "选择合适的预设，设置输出文件位置，先预览画质。",
+          "启动编码，完成后比较输出视频的体积和清晰度。"
+        ],
+        "result": "获得一个新的可播放视频文件，并能比较处理前后的大小。",
+        "limitations": "压缩效果取决于原文件和编码参数，不保证每次都变小；它不是完整的时间线视频剪辑器。",
+        "entry_url": "https://handbrake.fr/docs/en/latest/introduction/quick-start.html",
+        "entry_label": "查看快速上手",
+        "demo": "桌面应用；操作流程见官方图文指南",
+        "sources": [
+          "https://github.com/HandBrake/HandBrake",
+          "https://handbrake.fr/docs/en/latest/introduction/quick-start.html"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 80.0
+    },
+    {
+      "name": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Dart",
+      "stars": 92599,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "dart",
+        "file-sharing",
+        "flutter",
+        "flutter-apps"
+      ],
+      "category": "办公自动化",
+      "score": 0.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2022-12-16T00:46:07Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "手机和电脑互传文件，不经过聊天软件",
+        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
+        "difficulty": "安装即用",
+        "cost": "免费开源；局域网传输不需要云端订阅",
+        "api_key": "基础传输不需要 API Key",
+        "platform": "Windows / macOS / Linux / Android / iOS",
+        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
+        "steps": [
+          "在发送和接收设备上，从官方入口安装 LocalSend。",
+          "让两台设备接入同一局域网，并打开应用。",
+          "选择一个测试文件和接收设备，在接收端确认保存。"
+        ],
+        "result": "测试文件出现在接收设备中，可直接打开。",
+        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
+        "entry_url": "https://localsend.org",
+        "entry_label": "官网下载",
+        "demo": "本地应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/localsend/localsend"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 80.0
+    },
+    {
+      "name": "audacity/audacity",
+      "url": "https://github.com/audacity/audacity",
+      "description": "Audio Editor",
+      "summary_zh": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "C++",
+      "stars": 18554,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "audio",
+        "cross-platform",
+        "editor",
+        "gplv2",
+        "wxwidgets-applications"
+      ],
+      "category": "内容创作",
+      "score": 14.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2015-03-26T10:46:17Z",
+      "guide": {
+        "category": "内容创作",
+        "task": "录制和剪掉音频里不需要的片段",
+        "summary": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
+        "audience": "播客、口播和音频内容创作者",
+        "difficulty": "需要学习",
+        "cost": "核心编辑器免费开源；可选外部服务另行核对",
+        "api_key": "基础本地录音编辑不需要 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "录音需要可用麦克风；长音频和多轨工程更依赖内存与磁盘",
+        "steps": [
+          "从官网安装稳定版本，避免直接编译开发分支。",
+          "导入一段测试录音，试听并选中不需要的片段。",
+          "删除片段后重新试听，保存工程并导出音频副本。"
+        ],
+        "result": "得到一段经过剪辑的音频，且保留可继续修改的工程。",
+        "limitations": "需要熟悉音轨和导出设置；仓库开发分支正进行界面重构，可能与稳定版说明不同。",
+        "entry_url": "https://www.audacityteam.org",
+        "entry_label": "打开官网",
+        "demo": "桌面应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/audacity/audacity"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 73.17
+    },
+    {
+      "name": "OpenRefine/OpenRefine",
+      "url": "https://github.com/OpenRefine/OpenRefine",
+      "description": "OpenRefine is a free, open source power tool for working with messy data and improving it",
+      "summary_zh": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Java",
+      "stars": 12007,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "data-analysis",
+        "data-science",
+        "data-wrangling",
+        "datacleaning",
+        "datacleansing",
+        "datajournalism",
+        "datamining",
+        "java"
+      ],
+      "category": "办公自动化",
+      "score": 0.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2012-10-15T02:22:48Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "把表格里写法不一致的数据整理干净",
+        "summary": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
+        "audience": "处理名单、调查结果和业务数据的办公用户",
+        "difficulty": "需要学习",
+        "cost": "免费开源；连接外部数据服务时需另查该服务条款",
+        "api_key": "基础本地清理不需要 API Key",
+        "platform": "Windows / macOS / Linux；本机浏览器界面",
+        "hardware": "内存需求随数据量增加；按下载包说明确认 Java 要求",
+        "steps": [
+          "从官方站点下载适合系统的版本，按运行指南启动。",
+          "先用一份 CSV 副本创建项目，检查列类型和异常值。",
+          "尝试统一一列名称的写法，检查结果后导出新文件。"
+        ],
+        "result": "得到一份经过检查的新表格，原始数据副本仍保留。",
+        "limitations": "不是 Excel 的完整替代品；高级转换需要学习表达式。外部数据匹配功能可能发送所选数据。",
+        "entry_url": "https://openrefine.org/docs/manual/running",
+        "entry_label": "查看启动指南",
+        "demo": "在本机运行后通过浏览器使用",
+        "sources": [
+          "https://github.com/OpenRefine/OpenRefine",
+          "https://openrefine.org/docs/manual/running"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 72.0
+    },
+    {
+      "name": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "summary_zh": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Rust",
+      "stars": 90133,
+      "stars_today": null,
+      "snapshot_delta": null,
+      "snapshot_hours": null,
+      "topics": [
+        "packaging",
+        "python",
+        "resolver",
+        "uv"
+      ],
+      "category": "编程开发",
+      "score": 0.0,
+      "is_new": true,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2023-10-02T20:24:11Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "给 Python 项目统一管理环境和依赖",
+        "summary": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
+        "audience": "使用 Python 的开发者；需要基本命令行经验",
+        "difficulty": "需要命令行",
+        "cost": "免费开源；下载依赖需要访问对应软件源",
+        "api_key": "基础使用不需要大模型 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "通常不需要 GPU；磁盘和网络需求取决于项目依赖",
+        "steps": [
+          "先按官方安装文档安装 uv，并确认终端能识别它。",
+          "按官方 First steps 指南在新的测试目录初始化项目。",
+          "添加一个测试依赖并运行示例，检查项目文件与锁定文件。"
+        ],
+        "result": "一个可通过 uv 管理与重复运行的 Python 测试项目。",
+        "limitations": "不是图形界面软件；迁移现有项目之前需检查原有依赖与构建方式。",
+        "entry_url": "https://docs.astral.sh/uv/getting-started/first-steps/",
+        "entry_label": "查看入门步骤",
+        "demo": "命令行工具；无须在线账号即可做本地基础练习",
+        "sources": [
+          "https://github.com/astral-sh/uv",
+          "https://docs.astral.sh/uv/getting-started/first-steps/"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 68.0
+    },
+    {
+      "name": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "summary_zh": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "来自近期活跃候选池；尚无足够快照确认短期增长。",
+      "language": "Python",
+      "stars": 45975,
+      "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
       "topics": [
         "ai",
-        "cplusplus",
-        "diffusion",
-        "flux",
-        "flux-dev",
-        "ggml",
-        "image-generation",
-        "image2image"
+        "angular",
+        "archiving",
+        "django",
+        "dms",
+        "document-management",
+        "document-management-system",
+        "llm"
       ],
-      "category": "AI / LLM",
-      "score": 80.74,
+      "category": "办公自动化",
+      "score": 14.0,
       "is_new": true,
       "sources": [
-        "trending",
-        "tracked"
+        "practical-library"
       ],
-      "created_at": "2023-08-13T07:36:51Z"
-    },
-    {
-      "name": "NVIDIA/Model-Optimizer",
-      "url": "https://github.com/NVIDIA/Model-Optimizer",
-      "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
-      "summary_zh": "这是一个 AI 或大模型相关的开源项目，适合关注模型应用、推理和开发的人进一步评估。具体用途请结合下方原始简介与仓库文档查看。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 22 Star。",
-      "language": "Python",
-      "stars": 3933,
-      "stars_today": 22,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "AI / LLM",
-      "score": 77.22,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2024-04-23T19:00:54Z"
-    },
-    {
-      "name": "julyx10/lap",
-      "url": "https://github.com/julyx10/lap",
-      "description": "An offline-first photo manager for large local libraries",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 71 Star。",
-      "language": "Vue",
-      "stars": 2738,
-      "stars_today": 71,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "desktop-app",
-        "digital-asset-manager",
-        "duplicate-detection",
-        "face-recognition",
-        "family-photos",
-        "image-search",
-        "large-photo-collections",
-        "linux-app"
-      ],
-      "category": "其他开源",
-      "score": 73.49,
-      "is_new": true,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2024-08-11T16:24:28Z"
-    },
-    {
-      "name": "browser-use/jev-ultrafast",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "description": "Fastest and cheapest web agent",
-      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "创建约 8 天，累计 19,623 Star（不等于当日增长）。",
-      "language": "Python",
-      "stars": 19623,
-      "stars_today": null,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [],
-      "category": "Agent",
-      "score": 61.03,
-      "is_new": true,
-      "sources": [
-        "new-repository",
-        "tracked"
-      ],
-      "created_at": "2026-09-16T21:30:12Z"
-    },
-    {
-      "name": "deepseek-ai/deepseek-harness",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "description": "DeepSeek Harness: Everything is a Plugin.",
-      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
-      "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "创建约 43 天，累计 234,959 Star（不等于当日增长）。",
-      "language": "TypeScript",
-      "stars": 234959,
-      "stars_today": null,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "ai-agents",
-        "cordis",
-        "dsh",
-        "dsh-plugin"
-      ],
-      "category": "其他开源",
-      "score": 51.76,
-      "is_new": true,
-      "sources": [
-        "new-repository",
-        "tracked"
-      ],
-      "created_at": "2026-08-13T11:56:32Z"
+      "created_at": "2022-02-12T21:56:52Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "把扫描件整理成可搜索的文档档案",
+        "summary": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
+        "audience": "有 NAS 或服务器经验、需要持续归档文件的人",
+        "difficulty": "需要部署",
+        "cost": "开源自托管；需要自行承担存储、备份和服务器成本",
+        "api_key": "基础归档不依赖付费大模型 Key",
+        "platform": "推荐 Docker Compose 部署，浏览器访问",
+        "hardware": "需部署环境和持久化存储；具体容量取决于文档数量",
+        "steps": [
+          "先打开官方演示，用非敏感测试资料了解流程。",
+          "决定正式使用后，按官方文档准备 Docker Compose 环境和备份。",
+          "导入一份测试扫描件，检查识别结果并尝试搜索。"
+        ],
+        "result": "能在自己的文档库里通过文字找到导入的测试文件。",
+        "limitations": "不是装完就无需维护的云服务；要自己负责备份与访问权限。公开演示会重置，请勿上传敏感文件。",
+        "entry_url": "https://demo.paperless-ngx.com",
+        "entry_label": "打开官方演示",
+        "demo": "有公开演示；仅使用非敏感测试文件",
+        "sources": [
+          "https://github.com/paperless-ngx/paperless-ngx",
+          "https://docs.paperless-ngx.com"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 65.17
     }
-  ]
+  ],
+  "discovery_mode": "curated-library"
 }

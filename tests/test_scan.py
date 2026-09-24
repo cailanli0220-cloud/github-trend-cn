@@ -60,6 +60,35 @@ class ScannerTests(unittest.TestCase):
         with patch.dict(os.environ, {'DEEPSEEK_API_KEY': 'private-test-string'}):
             self.assertNotIn('private-test-string', scan.safe_text('text private-test-string'))
 
+    def test_practical_selection_is_bounded_diverse_and_documented(self):
+        catalog = scan.read_json(scan.ROOT / 'data/guides.json', {})
+        items = []
+        for name in catalog:
+            r = self.repo()
+            r['full_name'] = name
+            items.append(scan.build_item(r, {'sources': ['practical-library']}, {}, NOW))
+        unverified = scan.build_item(self.repo(9000000), {'sources': ['trending'], 'today': 10000}, {}, NOW)
+        chosen, library = scan.practical_selection(items + [unverified], {}, NOW, catalog)
+        self.assertEqual(len(chosen), 5)
+        self.assertEqual(len(library), len(catalog))
+        self.assertEqual({p['category'] for p in chosen}, {'办公自动化', '内容创作', '编程开发'})
+        self.assertNotIn('test/project', {p['name'] for p in chosen})
+        self.assertTrue(all('未安装实测' in p['summary_source'] for p in library))
+        few, _ = scan.practical_selection(items[:2], {}, NOW, catalog)
+        self.assertEqual(len(few), 2)
+
+    def test_practical_repeat_penalty_and_invalid_guide(self):
+        catalog = scan.read_json(scan.ROOT / 'data/guides.json', {})
+        name = next(iter(catalog))
+        r = self.repo()
+        r['full_name'] = name
+        item = scan.build_item(r, {'sources': []}, {}, NOW)
+        fresh, _ = scan.practical_selection([item], {}, NOW, catalog)
+        old, _ = scan.practical_selection([item], {name: {'practical_dates': ['2026-09-23']}}, NOW, catalog)
+        self.assertGreater(fresh[0]['practical_score'], old[0]['practical_score'])
+        self.assertFalse(old[0]['is_new'])
+        self.assertFalse(scan.valid_guide({'category': '办公自动化', 'task': 'invented'}))
+
     def test_total_source_outage_preserves_last_successful_timestamp(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(scan, 'DATA', Path(tmp)), patch.object(scan, 'trending', side_effect=requests.ConnectionError()), patch.object(scan, 'github', side_effect=requests.ConnectionError()), patch.object(scan.time, 'sleep'):
             previous = {'updated_at': '2026-09-23T01:00:00+00:00', 'projects': [{'name': 'test/project'}]}

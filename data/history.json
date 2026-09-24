@@ -3,364 +3,430 @@
     "rohitg00/ai-engineering-from-scratch": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 56119
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 56141
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "vectorize-io/hindsight": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 27199
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 27222
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "dream-num/univer": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 17249
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 17260
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "google/ax": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 9891
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 9899
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "NVIDIA/Model-Optimizer": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 3933
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 3939
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "FxEmbed/FxEmbed": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 5297
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 5301
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "anthropics/financial-services": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 37249
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 37253
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "HKUDS/CLI-Anything": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 50198
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 50201
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "mvt-project/mvt": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 14633
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 14636
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "obra/superpowers": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 291055
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 291060
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "strands-agents/harness-sdk": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 8131
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 8135
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "julyx10/lap": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 2738
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 2741
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "superdesigndev/treg": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 3018
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 3022
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "leejet/stable-diffusion.cpp": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 7179
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 7181
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "deepseek-ai/deepseek-harness": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 234959
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 234972
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "anywhere-labs/dsh-desktop": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 28850
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 28851
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "guillaumemeyer/watermarks-remover": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 22730
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 22731
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "NandhaKishorM/laya": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 22385
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 22411
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "firecrawl/anydoc": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 22007
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "browser-use/jev-ultrafast": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 19623
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 19630
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
       "featured_dates": [
         "2026-09-24"
-      ]
+      ],
+      "practical_dates": [],
+      "guide": null
     },
     "awesome-dsh-plugin/awesome-dsh-plugin": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 16811
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 16812
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "hypit-ai/hypit": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 16010
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 16014
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "yc-software/qm": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 15229
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "eternity4719/HowToLiveBetter": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 13909
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 13930
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "pathwaycom/arc-task-gen": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 11143
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "trycompai/crm": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 10808
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "smart-mcp-proxy/mcpproxy-go": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 379
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "ailinone/collective-intelligence": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 208
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "0xShug0/audio.cpp": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 3006
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "cloudflare/agents": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 5653
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "MIgHTy-alIeN/ai-trader-bot": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 2710
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "huridocs/uwazi": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 324
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "datadrivenconstruction/OpenConstructionERP": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 843
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "Kilo-Org/kilocode": {
       "samples": [
@@ -395,12 +461,14 @@
     "Natively-AI-assistant/natively-cluely-ai-assistant": {
       "samples": [
         {
-          "at": "2026-09-24T15:18:39.791026+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 2594
         }
       ],
-      "last_seen": "2026-09-24T15:18:39.791026+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "mastra-ai/mastra": {
       "samples": [
@@ -485,22 +553,26 @@
     "abundantbeing/hermes-browser-extension": {
       "samples": [
         {
-          "at": "2026-09-24T15:04:34.263788+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 1559
         }
       ],
-      "last_seen": "2026-09-24T15:04:34.263788+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "NousResearch/hermes-agent": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 248623
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 248624
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "gakonst/nanocodex": {
       "samples": [
@@ -565,32 +637,38 @@
     "mixpeek/amux": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 496
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "Dicklesworthstone/destructive_command_guard": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 6048
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "lidge-jun/opencodex": {
       "samples": [
         {
-          "at": "2026-09-24T15:04:34.263788+00:00",
-          "stars": 16177
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 16178
         }
       ],
-      "last_seen": "2026-09-24T15:04:34.263788+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "agentconnect-md/agentconnect": {
       "samples": [
@@ -605,12 +683,14 @@
     "smithersai/smithers": {
       "samples": [
         {
-          "at": "2026-09-24T15:04:34.263788+00:00",
-          "stars": 421
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 420
         }
       ],
-      "last_seen": "2026-09-24T15:04:34.263788+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "lmnr-ai/lmnr": {
       "samples": [
@@ -675,22 +755,26 @@
     "manykarim/rf-mcp": {
       "samples": [
         {
-          "at": "2026-09-24T15:04:34.263788+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 115
         }
       ],
-      "last_seen": "2026-09-24T15:04:34.263788+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "n8n-io/n8n": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 205856
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 205857
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "Corsinvest/cv4pve-admin": {
       "samples": [
@@ -755,12 +839,14 @@
     "openclaw/openclaw": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 390374
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 390375
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "MadAppGang/claudish": {
       "samples": [
@@ -795,12 +881,14 @@
     "deepset-ai/haystack": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 26589
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "code-yeongyu/oh-my-openagent": {
       "samples": [
@@ -865,12 +953,14 @@
     "CherryHQ/cherry-studio": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 52130
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 52131
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "synthetic-sciences/openscience": {
       "samples": [
@@ -885,12 +975,14 @@
     "okou-ai/okou": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 1154
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "Enderfga/claw-orchestrator": {
       "samples": [
@@ -905,22 +997,26 @@
     "DemonDamon/AgenticX": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 234
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "prime-radiant-inc/evener": {
       "samples": [
         {
-          "at": "2026-09-24T15:18:39.791026+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 160
         }
       ],
-      "last_seen": "2026-09-24T15:18:39.791026+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "azalio/map-framework": {
       "samples": [
@@ -965,12 +1061,14 @@
     "sesori-ai/sesori_apps_monorepo": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 122
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "PerpetualSoftware/pad": {
       "samples": [
@@ -1025,12 +1123,14 @@
     "callstack/agent-device": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 4756
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "getopenpost/openpost": {
       "samples": [
@@ -1075,12 +1175,14 @@
     "ldbumble/taskuary": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 121
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "micro/mu": {
       "samples": [
@@ -1095,12 +1197,14 @@
     "koala73/worldmonitor": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 87318
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "reyamira/models": {
       "samples": [
@@ -1125,12 +1229,14 @@
     "tianma-if/edgeever": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
-          "stars": 1514
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1515
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     },
     "ShayanAbbas1/dbdelve": {
       "samples": [
@@ -1145,12 +1251,418 @@
     "jo-duchan/tapflow": {
       "samples": [
         {
-          "at": "2026-09-24T15:20:34.456873+00:00",
+          "at": "2026-09-24T15:34:21.983127+00:00",
           "stars": 668
         }
       ],
-      "last_seen": "2026-09-24T15:20:34.456873+00:00",
-      "featured_dates": []
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "localsend/localsend": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 92599
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [
+        "2026-09-24"
+      ],
+      "practical_dates": [
+        "2026-09-24"
+      ],
+      "guide": null
+    },
+    "OpenRefine/OpenRefine": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 12007
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [
+        "2026-09-24"
+      ],
+      "practical_dates": [
+        "2026-09-24"
+      ],
+      "guide": null
+    },
+    "paperless-ngx/paperless-ngx": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 45975
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "HandBrake/HandBrake": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 24487
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [
+        "2026-09-24"
+      ],
+      "practical_dates": [
+        "2026-09-24"
+      ],
+      "guide": null
+    },
+    "audacity/audacity": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 18554
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [
+        "2026-09-24"
+      ],
+      "practical_dates": [
+        "2026-09-24"
+      ],
+      "guide": null
+    },
+    "astral-sh/uv": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 90133
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "usebruno/bruno": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 47167
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [
+        "2026-09-24"
+      ],
+      "practical_dates": [
+        "2026-09-24"
+      ],
+      "guide": null
+    },
+    "tenstorrent/tt-metal": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1685
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "macro-inc/macro": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 4390
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "cortexkit/magic-context": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 2200
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "mozilla-ai/otari": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 491
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "openclaw/Peekaboo": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 5202
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "rafska/awesome-local-llm": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 2890
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "civitai/civitai": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 7257
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "HKUDS/nanobot": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 48545
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "aipoch/open-science": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 4918
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "ArcReel/ArcReel": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 5162
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Kentucky-ai/opentakeoff": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 137
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Brandon56-code/worktree-pool-manager": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 115
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Dicklesworthstone/beads_rust": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1105
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "fiorastudio/buddy": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 112
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "uw-pluverse/perses": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 215
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "first-fluke/oh-my-agent": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1323
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Dicklesworthstone/skillranker": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 116
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "FirstEverTech/Universal-Intel-WiFi-BT-Updater": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 110
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "fabriziosalmi/certmate": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1432
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "heymrun/heym": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1265
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "DynamoDS/Dynamo": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 2025
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Peiiii/nextclaw": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 259
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "Pipelex/pipelex": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 889
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "argoproj-labs/argocd-image-updater": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 1716
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
+    },
+    "osbuild/osbuild": {
+      "samples": [
+        {
+          "at": "2026-09-24T15:34:21.983127+00:00",
+          "stars": 279
+        }
+      ],
+      "last_seen": "2026-09-24T15:34:21.983127+00:00",
+      "featured_dates": [],
+      "practical_dates": [],
+      "guide": null
     }
   }
 }
