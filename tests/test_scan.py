@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import patch, Mock
 import requests
 
 spec = importlib.util.spec_from_file_location('scan', Path(__file__).resolve().parents[1] / 'scripts/scan.py')
@@ -88,6 +88,15 @@ class ScannerTests(unittest.TestCase):
         self.assertGreater(fresh[0]['practical_score'], old[0]['practical_score'])
         self.assertFalse(old[0]['is_new'])
         self.assertFalse(scan.valid_guide({'category': '办公自动化', 'task': 'invented'}))
+
+    def test_malformed_ai_guide_response_falls_back(self):
+        import base64
+        item = scan.build_item(self.repo(), {'sources': []}, {}, NOW)
+        readme = {'content': base64.b64encode(b'public README ' * 40).decode()}
+        response = Mock()
+        response.json.return_value = {'choices': [{'message': {'content': '[]'}}]}
+        with patch.dict(os.environ, {'GITHUB_ACTIONS': 'true', 'DEEPSEEK_API_KEY': 'test-only-placeholder'}), patch.object(scan, 'github', return_value=readme), patch.object(scan.HTTP, 'post', return_value=response):
+            self.assertEqual(scan.discover_guides([item], {}, NOW), {})
 
     def test_total_source_outage_preserves_last_successful_timestamp(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(scan, 'DATA', Path(tmp)), patch.object(scan, 'trending', side_effect=requests.ConnectionError()), patch.object(scan, 'github', side_effect=requests.ConnectionError()), patch.object(scan.time, 'sleep'):

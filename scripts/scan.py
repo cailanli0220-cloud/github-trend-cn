@@ -266,6 +266,8 @@ def discover_guides(items, known, now):
                     {'role': 'user', 'content': json.dumps(evidence, ensure_ascii=False)}]})
         r.raise_for_status()
         parsed = json.loads(r.json()['choices'][0]['message']['content'])
+        if not isinstance(parsed, dict) or not isinstance(parsed.get('projects'), list):
+            return {}
         allowed = {p['name'] for p in evidence}
         out = {}
         for guide in parsed.get('projects', []):
