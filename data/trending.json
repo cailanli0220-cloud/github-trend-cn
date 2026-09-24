@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-24T15:34:21.983127+00:00",
+  "updated_at": "2026-09-24T15:37:31.290547+00:00",
   "date": "2026-09-24",
-  "last_attempt_at": "2026-09-24T15:34:21.983127+00:00",
+  "last_attempt_at": "2026-09-24T15:37:31.290547+00:00",
   "status": "ok",
   "summary_mode": "documented",
-  "candidate_count": 86,
+  "candidate_count": 84,
   "warnings": [],
   "projects": [
     {
