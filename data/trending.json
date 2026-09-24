@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-24T15:04:34.263788+00:00",
+  "updated_at": "2026-09-24T15:18:39.791026+00:00",
   "date": "2026-09-24",
-  "last_attempt_at": "2026-09-24T15:04:34.263788+00:00",
+  "last_attempt_at": "2026-09-24T15:18:39.791026+00:00",
   "status": "ok",
-  "summary_mode": "llm",
-  "candidate_count": 70,
+  "summary_mode": "basic",
+  "candidate_count": 80,
   "warnings": [],
   "projects": [
     {
       "name": "superdesigndev/treg",
       "url": "https://github.com/superdesigndev/treg",
       "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
-      "summary_zh": "面向 AI 代理的工具目录与代理服务，用一个 token 调用 3,000+ 个经编目的外部接口，按次计费；也可登记团队自己的密钥、CLI 与技能，认证在服务端注入，调用方不持有密钥。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 470 Star；创建约 72 天，累计 3,013 Star（不等于当日增长）。",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 470 Star；创建约 72 天，累计 3,018 Star（不等于当日增长）。",
       "language": "Python",
-      "stars": 3013,
+      "stars": 3018,
       "stars_today": 470,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -31,10 +31,11 @@
         "proxy"
       ],
       "category": "Agent",
-      "score": 127.02,
+      "score": 127.03,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2026-07-15T13:38:07Z"
     },
@@ -42,11 +43,11 @@
       "name": "vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
-      "summary_zh": "代理记忆系统，通过 retain/recall/reflect 三项操作让代理从交互中长期学习，而不仅是回放对话历史。支持 Docker 自托管、Python 与 TypeScript 客户端、MCP 及多种代理集成。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,607 Star。",
       "language": "Python",
-      "stars": 27160,
+      "stars": 27194,
       "stars_today": 1607,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -60,7 +61,8 @@
       "score": 115.44,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2025-10-30T11:49:48Z"
     },
@@ -68,11 +70,11 @@
       "name": "google/ax",
       "url": "https://github.com/google/ax",
       "description": "Google's open agentic orchestration runtime",
-      "summary_zh": "Google 开源的声明式代理编排运行时，用 Task、Workspace、Gateway、Model 四类清单在集群中沙箱化运行大量自主代理任务，支持暂停恢复与进入沙箱调试。项目仍处于概念与接口快速演进阶段。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,376 Star。",
       "language": "Go",
-      "stars": 9876,
+      "stars": 9888,
       "stars_today": 1376,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -81,7 +83,8 @@
       "score": 114.05,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2026-03-30T17:55:01Z"
     },
@@ -89,11 +92,11 @@
       "name": "dream-num/univer",
       "url": "https://github.com/dream-num/univer",
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-      "summary_zh": "开源 Office SDK，用插件架构和 Canvas 渲染在自有产品中嵌入表格、文档、演示、多维表格与看板，浏览器和 Node.js 共用同一套 Facade API，可自建协作与数据处理能力。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,060 Star。",
       "language": "TypeScript",
-      "stars": 17230,
+      "stars": 17248,
       "stars_today": 1060,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -111,7 +114,8 @@
       "score": 111.7,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2022-09-29T12:09:14Z"
     },
@@ -119,11 +123,11 @@
       "name": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
-      "summary_zh": "面向编码代理的软件开发方法论与可组合技能框架，从需求澄清、规格确认、实施计划到子代理分工执行与评审形成完整流程，支持 Claude Code、Codex、Cursor、Gemini CLI 等多种代理环境。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 606 Star。",
       "language": "Shell",
-      "stars": 291051,
+      "stars": 291055,
       "stars_today": 606,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -141,7 +145,8 @@
       "score": 106.68,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2025-10-09T19:45:18Z"
     },
@@ -149,11 +154,11 @@
       "name": "strands-agents/harness-sdk",
       "url": "https://github.com/strands-agents/harness-sdk",
       "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
-      "summary_zh": "在 Python 与 TypeScript 中构建和运行 AI 代理的开源 SDK 及开箱即用的 harness，提供生命周期控制、工具与结构化输出、MCP、多代理、记忆、会话、流式、护栏、追踪与评测，可跨模型和云使用。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 463 Star。",
       "language": "Python",
-      "stars": 8125,
+      "stars": 8130,
       "stars_today": 463,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -171,7 +176,8 @@
       "score": 104.26,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2025-05-14T19:59:51Z"
     },
@@ -179,11 +185,11 @@
       "name": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
-      "summary_zh": "开源 AI 工程学习课程，含 523 节课、20 个阶段，覆盖数学基础、机器学习、LLM 应用与代理工程，使用 Python、TypeScript、Rust、Julia，每节课产出可复用成果物，采用 MIT 许可。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 310 Star。",
       "language": "Python",
-      "stars": 56103,
+      "stars": 56116,
       "stars_today": 310,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -201,7 +207,8 @@
       "score": 100.66,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2026-03-18T18:38:02Z"
     },
@@ -209,11 +216,11 @@
       "name": "anthropics/financial-services",
       "url": "https://github.com/anthropics/financial-services",
       "description": "",
-      "summary_zh": "面向金融服务的 Claude 参考代理、技能与数据连接器，覆盖投行、股票研究、私募与财富管理。可作为 Cowork 插件安装，或经 Managed Agents API 部署，所有输出都需人工复核，不构成投资建议。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 510 Star。",
       "language": "Python",
-      "stars": 37244,
+      "stars": 37248,
       "stars_today": 510,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -222,7 +229,8 @@
       "score": 91.13,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2026-02-23T19:24:50Z"
     },
@@ -230,11 +238,11 @@
       "name": "HKUDS/CLI-Anything",
       "url": "https://github.com/HKUDS/CLI-Anything",
       "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "summary_zh": "把各类软件封装成便于 AI 代理调用的命令行界面，让代理能操作已有软件。提供 CLI-Hub 用于浏览安装社区构建的 CLI，并含多个演示、测试与技术报告，采用 Apache 2.0 许可。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 415 Star。",
       "language": "Python",
-      "stars": 50194,
+      "stars": 50198,
       "stars_today": 415,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -243,7 +251,8 @@
       "score": 89.28,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2026-03-08T13:52:57Z"
     },
@@ -251,11 +260,11 @@
       "name": "mvt-project/mvt",
       "url": "https://github.com/mvt-project/mvt",
       "description": "MVT (Mobile Verification Toolkit) helps with conducting forensics of mobile devices in order to find signs of a potential compromise.",
-      "summary_zh": "移动设备取证工具集，用于采集和分析 Android 与 iOS 设备痕迹，配合公开的入侵指标排查是否遭间谍软件感染。面向技术人员与调查人员，需命令行与取证基础，非终端用户自助检测工具。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 275 Star。",
       "language": "Python",
-      "stars": 14628,
+      "stars": 14632,
       "stars_today": 275,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -271,7 +280,8 @@
       "score": 85.58,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2021-07-16T05:50:44Z"
     },
@@ -279,11 +289,11 @@
       "name": "FxEmbed/FxEmbed",
       "url": "https://github.com/FxEmbed/FxEmbed",
       "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "summary_zh": "修复 X/Twitter 与 Bluesky 链接嵌入效果的服务，让 Discord、Telegram 等平台可显示多图、视频、投票、引用与翻译。提供 API 与文档，可自行部署，采用 MIT 许可，与 X Corp 无关联。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 165 Star。",
       "language": "TypeScript",
-      "stars": 5294,
+      "stars": 5297,
       "stars_today": 165,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -292,7 +302,8 @@
       "score": 81.01,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2022-07-13T23:59:04Z"
     },
@@ -300,11 +311,11 @@
       "name": "leejet/stable-diffusion.cpp",
       "url": "https://github.com/leejet/stable-diffusion.cpp",
       "description": "Diffusion model(SD,Flux,Wan,Qwen Image,Z-Image,...) inference in pure C/C++",
-      "summary_zh": "用纯 C/C++ 基于 ggml 实现扩散模型推理，支持 SD、Flux、Qwen Image、Wan 等图像与视频模型，无外部依赖，可在 CPU、CUDA、Vulkan、Metal 等后端运行，项目仍在快速开发中。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个 AI 或大模型相关的开源项目，适合关注模型应用、推理和开发的人进一步评估。具体用途请结合下方原始简介与仓库文档查看。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 33 Star。",
       "language": "C++",
-      "stars": 7176,
+      "stars": 7179,
       "stars_today": 33,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -322,7 +333,8 @@
       "score": 80.74,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2023-08-13T07:36:51Z"
     },
@@ -330,11 +342,11 @@
       "name": "NVIDIA/Model-Optimizer",
       "url": "https://github.com/NVIDIA/Model-Optimizer",
       "description": "A unified library of SOTA model optimization techniques like quantization, distillation, pruning, neural architecture search, speculative decoding, etc. It compresses deep learning models for downstream deployment frameworks like TensorRT-LLM, TensorRT, vLLM, etc. to optimize inference speed.",
-      "summary_zh": "NVIDIA 的模型优化库，提供量化、剪枝、神经架构搜索、蒸馏、投机解码与稀疏化等技术，可将 Hugging Face、PyTorch、ONNX 模型压缩导出，供 TensorRT-LLM、vLLM、SGLang 等推理框架部署。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个 AI 或大模型相关的开源项目，适合关注模型应用、推理和开发的人进一步评估。具体用途请结合下方原始简介与仓库文档查看。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 22 Star。",
       "language": "Python",
-      "stars": 3927,
+      "stars": 3933,
       "stars_today": 22,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -343,7 +355,8 @@
       "score": 77.22,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2024-04-23T19:00:54Z"
     },
@@ -351,11 +364,11 @@
       "name": "julyx10/lap",
       "url": "https://github.com/julyx10/lap",
       "description": "An offline-first photo manager for large local libraries",
-      "summary_zh": "开源本地优先的照片管理桌面应用，面向 macOS、Windows 与 Linux，支持按文件夹浏览大体量图库、本地 AI 搜索、人脸聚类、地图视图与重复清理，照片留在本地磁盘，无需云端上传或订阅。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
       "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 71 Star。",
       "language": "Vue",
-      "stars": 2733,
+      "stars": 2738,
       "stars_today": 71,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -373,7 +386,8 @@
       "score": 73.49,
       "is_new": true,
       "sources": [
-        "trending"
+        "trending",
+        "tracked"
       ],
       "created_at": "2024-08-11T16:24:28Z"
     },
@@ -381,11 +395,11 @@
       "name": "browser-use/jev-ultrafast",
       "url": "https://github.com/browser-use/jev-ultrafast",
       "description": "Fastest and cheapest web agent",
-      "summary_zh": "浏览器代理项目，将页面元素索引成带编号的操作空间，每个决策周期一次请求选出操作与目标元素，仅在输入文本时调用小模型生成内容。仓库自带 Google Flights 演示，并提供 Python 调用示例。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
-      "why_zh": "创建约 8 天，累计 19,613 Star（不等于当日增长）。",
+      "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
+      "summary_source": "基础中文说明（按标签归类）",
+      "why_zh": "创建约 8 天，累计 19,622 Star（不等于当日增长）。",
       "language": "Python",
-      "stars": 19613,
+      "stars": 19622,
       "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -394,7 +408,8 @@
       "score": 61.03,
       "is_new": true,
       "sources": [
-        "new-repository"
+        "new-repository",
+        "tracked"
       ],
       "created_at": "2026-09-16T21:30:12Z"
     },
@@ -402,11 +417,11 @@
       "name": "deepseek-ai/deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
       "description": "DeepSeek Harness: Everything is a Plugin.",
-      "summary_zh": "DeepSeek 开源的代理 harness，基于一切皆插件的架构并依托 Cordis，可通过 npm 启动 Web UI 或从源码构建运行。项目处于开发者预览阶段，会有兼容性破坏性变更。",
-      "summary_source": "AI 中文整理 · 依据公开仓库资料",
-      "why_zh": "创建约 43 天，累计 234,949 Star（不等于当日增长）。",
+      "summary_zh": "这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。",
+      "summary_source": "基础中文说明（按标签归类）",
+      "why_zh": "创建约 43 天，累计 234,959 Star（不等于当日增长）。",
       "language": "TypeScript",
-      "stars": 234949,
+      "stars": 234959,
       "stars_today": null,
       "snapshot_delta": null,
       "snapshot_hours": null,
@@ -420,7 +435,8 @@
       "score": 51.76,
       "is_new": true,
       "sources": [
-        "new-repository"
+        "new-repository",
+        "tracked"
       ],
       "created_at": "2026-08-13T11:56:32Z"
     }
