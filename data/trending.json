@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-28T01:07:20.016260+00:00",
+  "updated_at": "2026-09-28T15:20:09.020360+00:00",
   "date": "2026-09-28",
-  "last_attempt_at": "2026-09-28T01:07:20.016260+00:00",
+  "last_attempt_at": "2026-09-28T15:20:09.020360+00:00",
   "status": "ok",
   "summary_mode": "documented",
   "candidate_count": 94,
@@ -14,12 +14,12 @@
       "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
       "summary_zh": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +41。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +54。",
       "language": "Python",
-      "stars": 46106,
+      "stars": 46119,
       "stars_today": null,
-      "snapshot_delta": 41,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 54,
+      "snapshot_hours": 38.2,
       "topics": [
         "ai",
         "angular",
@@ -31,7 +31,7 @@
         "llm"
       ],
       "category": "办公自动化",
-      "score": 28.98,
+      "score": 28.04,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -63,59 +63,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 34.42
-    },
-    {
-      "name": "localsend/localsend",
-      "url": "https://github.com/localsend/localsend",
-      "description": "An open-source cross-platform alternative to AirDrop",
-      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
-      "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +79。",
-      "language": "Dart",
-      "stars": 92843,
-      "stars_today": null,
-      "snapshot_delta": 79,
-      "snapshot_hours": 24.0,
-      "topics": [
-        "dart",
-        "file-sharing",
-        "flutter",
-        "flutter-apps"
-      ],
-      "category": "办公自动化",
-      "score": 17.84,
-      "is_new": false,
-      "sources": [
-        "practical-library"
-      ],
-      "created_at": "2022-12-16T00:46:07Z",
-      "guide": {
-        "category": "办公自动化",
-        "task": "手机和电脑互传文件，不经过聊天软件",
-        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
-        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
-        "difficulty": "安装即用",
-        "cost": "免费开源；局域网传输不需要云端订阅",
-        "api_key": "基础传输不需要 API Key",
-        "platform": "Windows / macOS / Linux / Android / iOS",
-        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
-        "steps": [
-          "在发送和接收设备上，从官方入口安装 LocalSend。",
-          "让两台设备接入同一局域网，并打开应用。",
-          "选择一个测试文件和接收设备，在接收端确认保存。"
-        ],
-        "result": "测试文件出现在接收设备中，可直接打开。",
-        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
-        "entry_url": "https://localsend.org",
-        "entry_label": "官网下载",
-        "demo": "本地应用；未确认网页免安装体验",
-        "sources": [
-          "https://github.com/localsend/localsend"
-        ],
-        "reviewed_at": "2026-09-24"
-      },
-      "practical_score": 33.49
+      "practical_score": 34.34
     },
     {
       "name": "usebruno/bruno",
@@ -123,12 +71,12 @@
       "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
       "summary_zh": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +9。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +24。",
       "language": "JavaScript",
-      "stars": 47229,
+      "stars": 47244,
       "stars_today": null,
-      "snapshot_delta": 9,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 24,
+      "snapshot_hours": 38.2,
       "topics": [
         "api-client",
         "api-testing",
@@ -140,7 +88,7 @@
         "javascript"
       ],
       "category": "编程开发",
-      "score": 17.48,
+      "score": 19.42,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -172,7 +120,59 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 33.46
+      "practical_score": 33.62
+    },
+    {
+      "name": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +135。",
+      "language": "Dart",
+      "stars": 92899,
+      "stars_today": null,
+      "snapshot_delta": 135,
+      "snapshot_hours": 38.2,
+      "topics": [
+        "dart",
+        "file-sharing",
+        "flutter",
+        "flutter-apps"
+      ],
+      "category": "办公自动化",
+      "score": 18.13,
+      "is_new": false,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2022-12-16T00:46:07Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "手机和电脑互传文件，不经过聊天软件",
+        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
+        "difficulty": "安装即用",
+        "cost": "免费开源；局域网传输不需要云端订阅",
+        "api_key": "基础传输不需要 API Key",
+        "platform": "Windows / macOS / Linux / Android / iOS",
+        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
+        "steps": [
+          "在发送和接收设备上，从官方入口安装 LocalSend。",
+          "让两台设备接入同一局域网，并打开应用。",
+          "选择一个测试文件和接收设备，在接收端确认保存。"
+        ],
+        "result": "测试文件出现在接收设备中，可直接打开。",
+        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
+        "entry_url": "https://localsend.org",
+        "entry_label": "官网下载",
+        "demo": "本地应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/localsend/localsend"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 33.51
     },
     {
       "name": "HandBrake/HandBrake",
@@ -180,19 +180,19 @@
       "description": "HandBrake's development repository",
       "summary_zh": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +10。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +13。",
       "language": "C",
-      "stars": 24519,
+      "stars": 24522,
       "stars_today": null,
-      "snapshot_delta": 10,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 13,
+      "snapshot_hours": 38.2,
       "topics": [
         "gplv2",
         "multi-platform",
         "video-transcoding"
       ],
       "category": "内容创作",
-      "score": 9.76,
+      "score": 9.01,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -224,7 +224,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 32.81
+      "practical_score": 32.75
     },
     {
       "name": "audacity/audacity",
@@ -232,12 +232,12 @@
       "description": "Audio Editor",
       "summary_zh": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +12。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +18。",
       "language": "C++",
-      "stars": 18582,
+      "stars": 18588,
       "stars_today": null,
-      "snapshot_delta": 12,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 18,
+      "snapshot_hours": 38.2,
       "topics": [
         "audio",
         "cross-platform",
@@ -246,7 +246,7 @@
         "wxwidgets-applications"
       ],
       "category": "内容创作",
-      "score": 18.57,
+      "score": 18.35,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -277,7 +277,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 25.55
+      "practical_score": 25.53
     }
   ],
   "library": [
@@ -287,12 +287,12 @@
       "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
       "summary_zh": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +41。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +54。",
       "language": "Python",
-      "stars": 46106,
+      "stars": 46119,
       "stars_today": null,
-      "snapshot_delta": 41,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 54,
+      "snapshot_hours": 38.2,
       "topics": [
         "ai",
         "angular",
@@ -304,7 +304,7 @@
         "llm"
       ],
       "category": "办公自动化",
-      "score": 28.98,
+      "score": 28.04,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -336,59 +336,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 34.42
-    },
-    {
-      "name": "localsend/localsend",
-      "url": "https://github.com/localsend/localsend",
-      "description": "An open-source cross-platform alternative to AirDrop",
-      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
-      "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +79。",
-      "language": "Dart",
-      "stars": 92843,
-      "stars_today": null,
-      "snapshot_delta": 79,
-      "snapshot_hours": 24.0,
-      "topics": [
-        "dart",
-        "file-sharing",
-        "flutter",
-        "flutter-apps"
-      ],
-      "category": "办公自动化",
-      "score": 17.84,
-      "is_new": false,
-      "sources": [
-        "practical-library"
-      ],
-      "created_at": "2022-12-16T00:46:07Z",
-      "guide": {
-        "category": "办公自动化",
-        "task": "手机和电脑互传文件，不经过聊天软件",
-        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
-        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
-        "difficulty": "安装即用",
-        "cost": "免费开源；局域网传输不需要云端订阅",
-        "api_key": "基础传输不需要 API Key",
-        "platform": "Windows / macOS / Linux / Android / iOS",
-        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
-        "steps": [
-          "在发送和接收设备上，从官方入口安装 LocalSend。",
-          "让两台设备接入同一局域网，并打开应用。",
-          "选择一个测试文件和接收设备，在接收端确认保存。"
-        ],
-        "result": "测试文件出现在接收设备中，可直接打开。",
-        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
-        "entry_url": "https://localsend.org",
-        "entry_label": "官网下载",
-        "demo": "本地应用；未确认网页免安装体验",
-        "sources": [
-          "https://github.com/localsend/localsend"
-        ],
-        "reviewed_at": "2026-09-24"
-      },
-      "practical_score": 33.49
+      "practical_score": 34.34
     },
     {
       "name": "usebruno/bruno",
@@ -396,12 +344,12 @@
       "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
       "summary_zh": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +9。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +24。",
       "language": "JavaScript",
-      "stars": 47229,
+      "stars": 47244,
       "stars_today": null,
-      "snapshot_delta": 9,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 24,
+      "snapshot_hours": 38.2,
       "topics": [
         "api-client",
         "api-testing",
@@ -413,7 +361,7 @@
         "javascript"
       ],
       "category": "编程开发",
-      "score": 17.48,
+      "score": 19.42,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -445,7 +393,59 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 33.46
+      "practical_score": 33.62
+    },
+    {
+      "name": "localsend/localsend",
+      "url": "https://github.com/localsend/localsend",
+      "description": "An open-source cross-platform alternative to AirDrop",
+      "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +135。",
+      "language": "Dart",
+      "stars": 92899,
+      "stars_today": null,
+      "snapshot_delta": 135,
+      "snapshot_hours": 38.2,
+      "topics": [
+        "dart",
+        "file-sharing",
+        "flutter",
+        "flutter-apps"
+      ],
+      "category": "办公自动化",
+      "score": 18.13,
+      "is_new": false,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2022-12-16T00:46:07Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "手机和电脑互传文件，不经过聊天软件",
+        "summary": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
+        "audience": "普通用户；经常在手机与电脑之间搬文件的人",
+        "difficulty": "安装即用",
+        "cost": "免费开源；局域网传输不需要云端订阅",
+        "api_key": "基础传输不需要 API Key",
+        "platform": "Windows / macOS / Linux / Android / iOS",
+        "hardware": "设备需能互相访问同一局域网；系统版本要求见官方文档",
+        "steps": [
+          "在发送和接收设备上，从官方入口安装 LocalSend。",
+          "让两台设备接入同一局域网，并打开应用。",
+          "选择一个测试文件和接收设备，在接收端确认保存。"
+        ],
+        "result": "测试文件出现在接收设备中，可直接打开。",
+        "limitations": "不适合直接跨公网远程传输；访客 Wi-Fi、设备隔离或防火墙可能导致找不到对方。",
+        "entry_url": "https://localsend.org",
+        "entry_label": "官网下载",
+        "demo": "本地应用；未确认网页免安装体验",
+        "sources": [
+          "https://github.com/localsend/localsend"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 33.51
     },
     {
       "name": "HandBrake/HandBrake",
@@ -453,19 +453,19 @@
       "description": "HandBrake's development repository",
       "summary_zh": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +10。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +13。",
       "language": "C",
-      "stars": 24519,
+      "stars": 24522,
       "stars_today": null,
-      "snapshot_delta": 10,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 13,
+      "snapshot_hours": 38.2,
       "topics": [
         "gplv2",
         "multi-platform",
         "video-transcoding"
       ],
       "category": "内容创作",
-      "score": 9.76,
+      "score": 9.01,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -497,7 +497,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 32.81
+      "practical_score": 32.75
     },
     {
       "name": "audacity/audacity",
@@ -505,12 +505,12 @@
       "description": "Audio Editor",
       "summary_zh": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +12。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +18。",
       "language": "C++",
-      "stars": 18582,
+      "stars": 18588,
       "stars_today": null,
-      "snapshot_delta": 12,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 18,
+      "snapshot_hours": 38.2,
       "topics": [
         "audio",
         "cross-platform",
@@ -519,7 +519,7 @@
         "wxwidgets-applications"
       ],
       "category": "内容创作",
-      "score": 18.57,
+      "score": 18.35,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -550,7 +550,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 25.55
+      "practical_score": 25.53
     },
     {
       "name": "OpenRefine/OpenRefine",
@@ -558,12 +558,12 @@
       "description": "OpenRefine is a free, open source power tool for working with messy data and improving it",
       "summary_zh": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +0。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +2。",
       "language": "Java",
-      "stars": 12012,
+      "stars": 12014,
       "stars_today": null,
-      "snapshot_delta": 0,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 2,
+      "snapshot_hours": 38.2,
       "topics": [
         "data-analysis",
         "data-science",
@@ -575,7 +575,7 @@
         "java"
       ],
       "category": "办公自动化",
-      "score": 0.0,
+      "score": 3.31,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -607,7 +607,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 24.0
+      "practical_score": 24.28
     },
     {
       "name": "astral-sh/uv",
@@ -615,12 +615,12 @@
       "description": "An extremely fast Python package and project manager, written in Rust.",
       "summary_zh": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +22。",
+      "why_zh": "距上次有效快照约 38.2 小时，Star 净变化 +47。",
       "language": "Rust",
-      "stars": 90223,
+      "stars": 90248,
       "stars_today": null,
-      "snapshot_delta": 22,
-      "snapshot_hours": 24.0,
+      "snapshot_delta": 47,
+      "snapshot_hours": 38.2,
       "topics": [
         "packaging",
         "python",
@@ -628,7 +628,7 @@
         "uv"
       ],
       "category": "编程开发",
-      "score": 12.74,
+      "score": 13.9,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -660,7 +660,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 21.06
+      "practical_score": 21.16
     }
   ],
   "discovery_mode": "curated-library"
