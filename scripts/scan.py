@@ -314,6 +314,89 @@ def practical_selection(items, histories, now, catalog):
     return selected, library
 
 
+def fallback_hot_guide(p, day):
+    """Build a distinct, evidence-based quick guide from public repo metadata."""
+    name = p['name'].split('/')[-1]
+    desc = safe_text(p.get('description') or '', 400)
+    topics = ' '.join(p.get('topics') or [])
+    text = (desc + ' ' + topics + ' ' + p.get('name', '')).lower()
+
+    category = '编程开发'
+    task = f'快速了解 {name} 并判断是否值得试用'
+    summary = f'{name}：{desc}' if desc else f'{name} 是近期进入热门候选的开源项目，具体用途请查看官方 README。'
+    audience = '关注新开源项目、愿意先阅读官方文档再试用的人'
+    result = f'判断 {name} 是否适合你的场景，并找到官方安装或快速开始入口。'
+    steps = [
+        f'先看 {name} 的 README 与项目简介，确认它解决的问题。',
+        '查看 Quick Start、安装方式和依赖要求。',
+        '在测试环境运行最小示例，再决定是否正式使用。'
+    ]
+
+    if any(k in text for k in ('voice cloning', 'voice design', 'dubbing', 'audiobook', 'transcription', 'speech', 'tts')):
+        category = '内容创作'
+        task = '本地做语音克隆、配音或转写'
+        summary = f'{name} 是本地语音创作工具；仓库介绍包含语音克隆、声音设计、视频配音、听写、转写和有声书等能力。'
+        audience = '做口播、视频配音、有声书或本地语音处理的人'
+        result = '确认本机是否能运行，并找到语音克隆、配音或转写的官方入口。'
+        steps = ['先查看 README 的系统/GPU 要求。', '按官方 Quick Start 安装并用短音频测试。', '确认效果和资源占用后再处理正式素材。']
+    elif 'memory' in text and any(k in text for k in ('agent', 'agentic', 'ai-memory')):
+        task = '给 AI Agent 增加可学习的长期记忆'
+        summary = f'{name} 聚焦 AI Agent 记忆，让智能体保存、检索并利用过去的信息，而不是每次都从零开始。'
+        audience = '开发 AI Agent、聊天助手或长期任务系统的开发者'
+        result = '确认它的记忆接口和存储方式是否能接入你的 Agent 架构。'
+        steps = ['先看 README 的核心概念和架构图。', '运行官方最小示例，写入并检索一条记忆。', '检查与现有 Agent/模型框架的接入方式。']
+    elif any(k in text for k in ('spreadsheet', 'spreadsheets', 'docs', 'slides', 'canvas', 'relational tables', 'pdf', 'office harness')):
+        category = '办公自动化'
+        task = '让 AI Agent 操作表格、文档、幻灯片和 PDF'
+        summary = f'{name} 提供面向 AI Agent 的办公文档运行环境，把表格、文档、幻灯片、画布、关系表和 PDF 放到同一套能力里。'
+        audience = '做办公自动化、AI 助手或文档处理产品的开发者'
+        result = '确认它能否作为你的 Agent 办公文档操作层。'
+        steps = ['先查看支持的文档类型和 API。', '运行官方示例，优先测试表格或文档操作。', '再评估协作、导入导出和部署要求。']
+    elif any(k in text for k in ('claude code', 'codex', 'multi-agent', 'agent orchestration', 'agent-harness')):
+        task = '让 Claude Code 与 Codex 等编码 Agent 协同工作'
+        summary = f'{name} 是多智能体编排工具，用来把多个编码 Agent 组合成一个协作系统；仓库介绍明确提到 Claude Code 与 Codex。'
+        audience = '正在用 Codex、Claude Code 或多 Agent 编程流程的开发者'
+        result = '确认多个编码 Agent 能否按你的工作流分工、协作和汇总结果。'
+        steps = ['先看 README 的 Agent 组成和调用方式。', '用一个小型测试仓库运行官方示例。', '再检查权限、成本和多个 Agent 的冲突处理方式。']
+    elif 'manage agents' in text or ('agents' in text and 'work' in text):
+        task = '集中管理工作中的 AI Agents'
+        summary = f'{name} 是面向工作场景的 Agent 管理应用，用于集中组织和管理多个 AI Agent。'
+        audience = '同时运行多个 AI Agent、需要统一管理任务和状态的团队或个人'
+        result = '确认它是否能统一管理你现在使用的多个 Agent。'
+        steps = ['先看 README 的 Agent 接入范围。', '启动官方演示或本地版本并接入一个测试 Agent。', '检查任务、状态和权限管理是否满足需求。']
+    elif any(k in text for k in ('browser automation', 'browser-use', 'playwright', 'web automation')):
+        category = '办公自动化'
+        task = '让 AI 或脚本自动操作网页'
+        summary = f'{name} 与浏览器自动化相关，可用于把网页点击、输入、抓取等操作纳入自动化流程。'
+        audience = '需要网页自动化、数据采集或 Agent 浏览器能力的开发者'
+    elif any(k in text for k in ('image generation', 'video generation', 'image editor', 'video editor')):
+        category = '内容创作'
+        task = '用开源工具处理或生成视觉内容'
+        summary = f'{name} 面向图像或视频内容工作流，具体生成、编辑能力以官方 README 为准。'
+        audience = '做图片、视频或 AI 内容创作的人'
+
+    return {
+        'category': category,
+        'task': task,
+        'summary': summary,
+        'audience': audience,
+        'difficulty': '需要查看文档',
+        'cost': '开源仓库；模型、云服务或第三方 API 费用以官方说明为准',
+        'api_key': '是否需要 API Key 以官方 README 为准',
+        'platform': '以官方 README 和 Releases 说明为准',
+        'hardware': '以官方 README 的系统、内存和 GPU 要求为准',
+        'steps': steps,
+        'result': result,
+        'limitations': '根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。',
+        'entry_url': f"https://github.com/{p['name']}#readme",
+        'entry_label': '查看官方 README',
+        'demo': '在线体验入口未核实',
+        'sources': [f"https://github.com/{p['name']}#readme"],
+        'reviewed_at': day,
+        'generated': True,
+    }
+
+
 def hot_selection(items, catalog, day, limit=5):
     """Pick genuinely fresh daily projects, preferring GitHub Trending."""
     ranked = sorted(items, key=lambda p: (
@@ -334,34 +417,11 @@ def hot_selection(items, catalog, day, limit=5):
             p['summary_zh'] = guide['summary']
             p['summary_source'] = 'AI 文档整理 · 未安装实测' if guide.get('generated') else '官方文档整理 · 未安装实测'
         else:
-            original_category = p.get('category')
-            display_category = '办公自动化' if original_category == '自动化' else '编程开发'
-            p['category'] = display_category
-            p['guide'] = {
-                'category': display_category,
-                'task': f"了解并尝试 {p['name'].split('/')[-1]} 的主要用途",
-                'summary': p.get('summary_zh') or p.get('description') or '近期活跃的开源项目。',
-                'audience': '关注新开源项目、愿意阅读 README 后再决定是否使用的人',
-                'difficulty': '需要查看文档',
-                'cost': '开源仓库；具体费用或外部服务成本以官方说明为准',
-                'api_key': '是否需要 API Key 以官方 README 为准',
-                'platform': '以官方 README 和 Releases 说明为准',
-                'hardware': '以官方 README 的系统与硬件要求为准',
-                'steps': [
-                    '打开官方 README，先确认项目解决什么问题以及适用场景。',
-                    '查看安装、Quick Start 或 Releases，优先在测试环境按文档尝试。',
-                    '确认依赖、权限、费用和限制后，再决定是否正式使用。'
-                ],
-                'result': '快速判断这个热门项目是否值得继续试用，并找到官方上手入口。',
-                'limitations': '这是基于公开仓库信息生成的快速入口，未进行安装实测；具体能力、兼容性和费用请以官方文档为准。',
-                'entry_url': f"https://github.com/{p['name']}#readme",
-                'entry_label': '查看官方 README',
-                'demo': '在线体验入口未核实',
-                'sources': [f"https://github.com/{p['name']}#readme"],
-                'reviewed_at': day,
-                'generated': True,
-            }
-            p['summary_source'] = p.get('summary_source') or '公开仓库信息整理 · 未安装实测'
+            guide = fallback_hot_guide(p, day)
+            p['guide'] = guide
+            p['category'] = guide['category']
+            p['summary_zh'] = guide['summary']
+            p['summary_source'] = '公开仓库信息整理 · 未安装实测'
         p['practical_score'] = p.get('score') or 0
         selected.append(p)
         if len(selected) >= limit:
