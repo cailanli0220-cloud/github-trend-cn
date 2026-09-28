@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-28T15:29:33.081800+00:00",
+  "updated_at": "2026-09-28T15:30:17.744878+00:00",
   "date": "2026-09-28",
-  "last_attempt_at": "2026-09-28T15:29:33.081800+00:00",
+  "last_attempt_at": "2026-09-28T15:30:17.744878+00:00",
   "status": "ok",
   "summary_mode": "documented",
   "candidate_count": 94,
@@ -14,11 +14,11 @@
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "summary_zh": "这是一个 AI 或大模型相关的开源项目，适合关注模型应用、推理和开发的人进一步评估。具体用途请结合下方原始简介与仓库文档查看。",
       "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,274 Star；距上次有效快照约 38.4 小时，Star 净变化 +5,601。",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,274 Star；距上次有效快照约 38.4 小时，Star 净变化 +5,602。",
       "language": "Python",
-      "stars": 42547,
+      "stars": 42548,
       "stars_today": 3274,
-      "snapshot_delta": 5601,
+      "snapshot_delta": 5602,
       "snapshot_hours": 38.4,
       "topics": [
         "ai",
@@ -71,15 +71,15 @@
       "description": "The open-source app everyone uses to manage agents at work",
       "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
       "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,185 Star；距上次有效快照约 38.4 小时，Star 净变化 +4,654。",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,185 Star；距上次有效快照约 38.4 小时，Star 净变化 +4,657。",
       "language": "TypeScript",
-      "stars": 91999,
+      "stars": 92002,
       "stars_today": 3185,
-      "snapshot_delta": 4654,
+      "snapshot_delta": 4657,
       "snapshot_hours": 38.4,
       "topics": [],
       "category": "编程开发",
-      "score": 180.59,
+      "score": 180.6,
       "is_new": true,
       "sources": [
         "trending"
@@ -111,7 +111,7 @@
         "reviewed_at": "2026-09-28",
         "generated": true
       },
-      "practical_score": 180.59
+      "practical_score": 180.6
     },
     {
       "name": "vectorize-io/hindsight",
@@ -119,11 +119,11 @@
       "description": "Hindsight: Agent Memory That Learns",
       "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
       "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 4,413 Star；距上次有效快照约 38.4 小时，Star 净变化 +7,948。",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 4,413 Star；距上次有效快照约 38.4 小时，Star 净变化 +7,949。",
       "language": "Python",
-      "stars": 40161,
+      "stars": 40162,
       "stars_today": 4413,
-      "snapshot_delta": 7948,
+      "snapshot_delta": 7949,
       "snapshot_hours": 38.4,
       "topics": [
         "agentic-ai",
@@ -173,11 +173,11 @@
       "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
       "summary_zh": "这是一个与 AI 智能体相关的开源项目，可用于探索如何让大模型连接工具、处理任务。具体支持哪些能力，请以仓库文档为准。",
       "summary_source": "基础中文说明（按标签归类）",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,105 Star；距上次有效快照约 38.4 小时，Star 净变化 +1,812。",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,105 Star；距上次有效快照约 38.4 小时，Star 净变化 +1,814。",
       "language": "TypeScript",
-      "stars": 21041,
+      "stars": 21043,
       "stars_today": 1105,
-      "snapshot_delta": 1812,
+      "snapshot_delta": 1814,
       "snapshot_hours": 38.4,
       "topics": [
         "board",
@@ -190,7 +190,7 @@
         "pdf"
       ],
       "category": "编程开发",
-      "score": 143.35,
+      "score": 143.37,
       "is_new": false,
       "sources": [
         "trending",
@@ -223,7 +223,7 @@
         "reviewed_at": "2026-09-28",
         "generated": true
       },
-      "practical_score": 143.35
+      "practical_score": 143.37
     },
     {
       "name": "mvschwarz/openrig",
