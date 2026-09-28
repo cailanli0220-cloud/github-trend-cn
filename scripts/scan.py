@@ -314,6 +314,60 @@ def practical_selection(items, histories, now, catalog):
     return selected, library
 
 
+def hot_selection(items, catalog, day, limit=5):
+    """Pick genuinely fresh daily projects, preferring GitHub Trending."""
+    ranked = sorted(items, key=lambda p: (
+        0 if 'trending' in p.get('sources', []) else 1,
+        -(p.get('score') or 0),
+        -(p.get('stars_today') or -1),
+        -(p.get('stars') or 0),
+        p.get('name', '')
+    ))
+    selected = []
+    for item in ranked:
+        p = dict(item)
+        guide = catalog.get(p['name'])
+        if valid_guide(guide):
+            guide = dict(guide)
+            p['guide'] = guide
+            p['category'] = guide['category']
+            p['summary_zh'] = guide['summary']
+            p['summary_source'] = 'AI 文档整理 · 未安装实测' if guide.get('generated') else '官方文档整理 · 未安装实测'
+        else:
+            original_category = p.get('category')
+            display_category = '办公自动化' if original_category == '自动化' else '编程开发'
+            p['category'] = display_category
+            p['guide'] = {
+                'category': display_category,
+                'task': f"了解并尝试 {p['name'].split('/')[-1]} 的主要用途",
+                'summary': p.get('summary_zh') or p.get('description') or '近期活跃的开源项目。',
+                'audience': '关注新开源项目、愿意阅读 README 后再决定是否使用的人',
+                'difficulty': '需要查看文档',
+                'cost': '开源仓库；具体费用或外部服务成本以官方说明为准',
+                'api_key': '是否需要 API Key 以官方 README 为准',
+                'platform': '以官方 README 和 Releases 说明为准',
+                'hardware': '以官方 README 的系统与硬件要求为准',
+                'steps': [
+                    '打开官方 README，先确认项目解决什么问题以及适用场景。',
+                    '查看安装、Quick Start 或 Releases，优先在测试环境按文档尝试。',
+                    '确认依赖、权限、费用和限制后，再决定是否正式使用。'
+                ],
+                'result': '快速判断这个热门项目是否值得继续试用，并找到官方上手入口。',
+                'limitations': '这是基于公开仓库信息生成的快速入口，未进行安装实测；具体能力、兼容性和费用请以官方文档为准。',
+                'entry_url': f"https://github.com/{p['name']}#readme",
+                'entry_label': '查看官方 README',
+                'demo': '在线体验入口未核实',
+                'sources': [f"https://github.com/{p['name']}#readme"],
+                'reviewed_at': day,
+                'generated': True,
+            }
+            p['summary_source'] = p.get('summary_source') or '公开仓库信息整理 · 未安装实测'
+        p['practical_score'] = p.get('score') or 0
+        selected.append(p)
+        if len(selected) >= limit:
+            break
+    return selected
+
 def scan():
     now = datetime.now(UTC)
     day = now.astimezone(CN).date().isoformat()
@@ -404,13 +458,14 @@ def scan():
     for name, guide in discovered.items():
         if name in histories:
             histories[name]['guide'] = guide
-    selected, library = practical_selection(items, histories, now, catalog)
+    practical_selected, library = practical_selection(items, histories, now, catalog)
+    selected = hot_selection(items, catalog, day, limit=5)
     if not selected:
         if previous.get('projects'):
-            previous.update({'status': 'stale', 'last_attempt_at': now.isoformat(), 'warnings': ['本次没有获得可用的实用指南，保留上次结果。']})
+            previous.update({'status': 'stale', 'last_attempt_at': now.isoformat(), 'warnings': ['本次没有获得可展示的热门项目，保留上次结果。']})
             save_json(DATA / 'trending.json', previous)
             return
-        raise RuntimeError('No sourced practical guides available')
+        raise RuntimeError('No daily hot projects available')
     mode = 'mixed' if any(p['guide'].get('generated') for p in library) else 'documented'
     for p in selected:
         dates = histories[p['name']]['featured_dates']
@@ -426,7 +481,7 @@ def scan():
     digest = {'schema_version': 2, 'updated_at': now.isoformat(), 'date': day,
               'last_attempt_at': now.isoformat(), 'status': 'partial' if warnings else 'ok',
               'summary_mode': mode, 'candidate_count': len(items), 'warnings': warnings, 'projects': selected,
-              'library': library, 'discovery_mode': 'llm-enabled' if os.getenv('GITHUB_ACTIONS') == 'true' and os.getenv('DEEPSEEK_API_KEY') else 'curated-library'}
+              'library': library, 'discovery_mode': 'daily-hot-plus-library'}
     save_json(DATA / 'trending.json', digest)
     save_json(DATA / 'history.json', {'repos': histories})
     print(f'Scanned {len(items)} repositories; selected {len(selected)} projects; Chinese mode: {mode}.')
