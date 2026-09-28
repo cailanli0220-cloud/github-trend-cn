@@ -88,7 +88,9 @@ async function load() {
   $('error').hidden = true;
   $('cards').setAttribute('aria-busy', 'true');
   try {
-    const response = await fetch('./data/trending.json', {cache: 'no-cache'});
+    const dataUrl = new URL('./data/trending.json', window.location.href);
+    dataUrl.searchParams.set('v', String(Date.now()));
+    const response = await fetch(dataUrl, {cache: 'no-store'});
     if (!response.ok) throw new Error('data unavailable');
     const data = await response.json();
     if (!Array.isArray(data.projects) || !data.projects.length) throw new Error('empty data');
