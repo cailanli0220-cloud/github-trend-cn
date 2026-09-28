@@ -17,7 +17,7 @@ permissions:
 
 concurrency:
   group: daily-trend-pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scan:
@@ -49,6 +49,7 @@ jobs:
           git add data/trending.json data/history.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Chinese GitHub digest"
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
       - name: Prepare public files only
