@@ -1,49 +1,40 @@
-# 开源工具实用指南
+# GitHub AI 趋势日报
 
 网站：https://cailanli0220-cloud.github.io/github-trend-cn/
 
-按“我想做什么”找工具。每日最多五个精选，覆盖办公自动化、内容创作和编程开发；可以切换全部工具指南、搜索用途、筛选安装即用或编程语言。
+每天目标约 20 个项目：15 个 AI 优先名额与 5 个全 GitHub 爆发名额（全站名额也可包含 AI）。候选不足时少发，不用没有变化的重复项目凑数。卡片提供中文用途、原始简介、语言、Star、近期热度、关注理由及 GitHub 链接。
 
-## 每张卡片
+## 发现与历史
 
-具体任务、中文用途、适合谁、上手门槛、费用、API Key、平台与硬件说明、三步上手路径、预期结果、使用限制、官方入口、资料来源和查阅日期。GitHub 热度折叠为辅助信息。
+覆盖 Agent、Coding Agent、MCP、本地模型、语音/视频、RAG/Memory、AI 应用，有合格候选时优先覆盖每类。搜索近 7 天新建项目、活跃 AI 主题小项目、全站活跃项目，结合 Trending 与历史跟踪。对首次发现 1–7 天且低于 10000 Star 的项目加权。
 
-文档整理不等于安装实测。未确认的信息明确标注，不承诺运行时间、压缩率或收益，不伪造在线演示。
+保存 14 天每日候选快照，包括 Star、热度及来源、候选排名；保留 30 天仓库跟踪状态。同一天重跑替换当天样本，只与此前日期比较，不伪造历史。近 7 天变化按可用样本实际间隔显示。
 
-## 数据与每日精选
+- 🆕 今日新出现：首次被扫描发现，不代表当天创建。
+- 🔥 突然加速：同来源热度达到上一有效日样本的 1.8 倍，至少 10 且增加至少 5。
+- 📈 持续升温：近 7 天连续三次有效每日样本热度递增。
+- 近 7 天精选过的项目，只有加速或持续升温才重复推荐。
 
-- `data/guides.json`：人工整理的官方资料指南，目前覆盖七个实用工具。新增/修订时填写来源和实际查阅日期。
-- `scripts/scan.py`：每天获取 Trending、新仓库、主题搜索与工具库仓库元数据；跳过归档仓库。
-- 只有具备具体任务、受众、成本与步骤的指南才能进入精选，不用泛泛介绍凑数量。
-- 排名优先考虑上手门槛，近期反复入选降权，短期热度影响有上限；尽量覆盖三种任务。
-- `data/trending.json`：今日精选 `projects` 与完整可用指南 `library`。
-- `data/history.json`：Star 快照、精选日期与已保存的 AI 指南。
-- 无 DeepSeek Key 时仍有具体中文指南，每天更新仓库状态并从工具库重选；不是每天自动新增五个全新软件。工具库需要继续补充和维护。
-- 配置 DeepSeek 后，Actions 从最多八个新候选 README 整理额外指南。未满足完整性校验的输出丢弃，AI 整理明确标注。生成内容不代表人工事实复核，费用等不明确时要求标为未知。
-- 文档查阅日期不会被日常元数据扫描自动刷新。旧指南可能需要随软件版本变化再次核对。
-- 上游全部失败保留上次成功数据和原始时间。没有可用指南时不发布空列表。
+热度优先取 Trending 今日新增 Star，否则使用 18–168 小时实际间隔的 Star 净变化折算每日增长。未知值不当零，来源不同不判定加速。排名是当日候选池综合得分排名，候选池变化也会影响排名。历史不足明确标注；无合格项目可发布空榜，上游全部失败则保留上次数据和时间并标注过期。
 
-## 自动化
+## 中文与安全
 
-`.github/workflows/daily.yml` 每天 UTC 01:00 / 北京时间 09:00 运行（GitHub 可能延迟）。支持 Actions → 每日趋势扫描与部署 → Run workflow。代码或指南更新会触发扫描并部署；自动数据提交不触发循环。
+Actions 后端可用 secret DEEPSEEK_API_KEY 依据公开 README 整理中文用途。缺少 Key 或服务失败时使用明确标注的分类基础说明与原始简介。本地不调用 DeepSeek。可用仓库变量 DEEPSEEK_MODEL 选择模型。
 
-Pages 使用 GitHub Actions 发布。公开仓库长期无人活动时，GitHub 可能停用定时工作流，可在 Actions 重新启用。
+凭据仅用于请求头，不进入提示词、网页、JSON 或日志。文本与 JSON 保存过滤运行时凭据；异常不打印请求头、响应或异常正文。网页以 textContent 展示外部内容。部署包仅包含静态页面和公开日报 JSON。
 
-## 可选 DeepSeek
+## 自动化与验证
 
-Settings → Secrets and variables → Actions 添加 `DEEPSEEK_API_KEY`。可用仓库变量 `DEEPSEEK_MODEL` 覆盖默认 `deepseek-chat`。
+保留每天 UTC 01:00（北京时间约 09:00）的 schedule 和 workflow_dispatch。GitHub 调度可能延迟。代码推送 main 自动执行测试、扫描、数据保存与 Pages 部署；自动数据提交不触发循环。推送不强制覆盖。
 
-只有 `GITHUB_ACTIONS=true` 的后端扫描读取和使用 Key。本地运行不调用 DeepSeek。只将公开 README 和 description 发给服务，Key 不进入 HTML、JavaScript、JSON 或日志。服务失败保留已有指南。
-
-## 本地检查
+本地验证：
 
 ```sh
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
+node --check app.js
 python scripts/scan.py
 python -m http.server 8000
 ```
 
-浏览 http://localhost:8000，不直接使用 file:// 打开 HTML。
-
-外部内容使用 textContent 渲染；入口链接仅允许 HTTPS。发布包只含 HTML、CSS、JS、图标与公开 JSON；不上传凭据或整个工作目录。数据 push 不强推，冲突时工作流失败而不覆盖。
+原 data/guides.json 和实用指南辅助函数保留，每日趋势榜已不受指南库限制。

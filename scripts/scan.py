@@ -20,12 +20,18 @@ DATA = ROOT / 'data'
 UTC = timezone.utc
 CN = timezone(timedelta(hours=8))
 REPO_PATTERN = re.compile(r'^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$')
-CATEGORIES = {
-    'Agent': ('agent', 'agents', 'agentic', 'multi-agent', 'ai-agent', 'mcp'),
-    'AI / LLM': ('llm', 'ai', 'machine-learning', 'deep-learning', 'rag', 'gpt', 'inference', 'large-language-models'),
-    '自动化': ('automation', 'workflow', 'scraping', 'crawler', 'rpa', 'browser-automation'),
-    '开发工具': ('developer-tools', 'devtools', 'cli', 'ide', 'editor', 'compiler', 'debugging', 'coding', 'terminal'),
+AI_CATEGORIES = {
+    'Coding Agent': ('coding-agent', 'code-agent', 'coding assistant', 'ai coding', 'software engineering agent', 'code generation'),
+    'MCP': ('mcp', 'model-context-protocol', 'model context protocol'),
+    '本地模型': ('ollama', 'gguf', 'llama.cpp', 'local-llm', 'local llm', 'quantization', 'inference'),
+    '语音/视频': ('text-to-speech', 'speech-to-text', 'tts', 'asr', 'voice-cloning', 'text-to-video', 'video-generation', 'speech synthesis'),
+    'RAG/Memory': ('rag', 'retrieval-augmented', 'retrieval augmented', 'agent-memory', 'ai-memory', 'vector-database'),
+    'Agent': ('agent', 'agents', 'agentic', 'multi-agent', 'ai-agent'),
+    'AI 应用': ('llm', 'ai', 'machine-learning', 'deep-learning', 'gpt', 'large-language-models', 'chatbot', 'artificial intelligence'),
 }
+CATEGORIES = {**AI_CATEGORIES, '开发工具': ('developer-tools', 'devtools', 'cli', 'ide'),
+              '自动化': ('automation', 'workflow', 'crawler')}
+
 
 
 def session():
@@ -60,7 +66,12 @@ def read_json(path, default):
 def save_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temp = path.with_suffix('.tmp')
-    temp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    encoded = json.dumps(value, ensure_ascii=False, indent=2)
+    for name in ('DEEPSEEK_API_KEY', 'GITHUB_TOKEN'):
+        secret = os.getenv(name)
+        if secret:
+            encoded = encoded.replace(json.dumps(secret)[1:-1], '[已移除]')
+    temp.write_text(encoded + '\n', encoding='utf-8')
     temp.replace(path)
 
 
@@ -88,10 +99,9 @@ def trending():
 
 
 def category(repo):
-    topics = set(repo.get('topics') or [])
-    words = set(re.findall(r'[a-z0-9-]+', (repo.get('description') or '').lower()))
+    text = ' '.join([repo.get('full_name', ''), repo.get('description') or '', *(repo.get('topics') or [])]).lower()
     for label, terms in CATEGORIES.items():
-        if (topics | words).intersection(terms):
+        if any(re.search(r'(?<![a-z0-9])' + re.escape(term) + r'(?![a-z0-9])', text) for term in terms):
             return label
     return '其他开源'
 
@@ -120,7 +130,7 @@ def basic_intro(repo, cat):
         '其他开源': '这是一个近期进入候选列表的开源项目。可先查看下方原始简介，再进入仓库了解安装方式、使用场景与限制。',
     }
     # Conservative templates are intentionally labeled; do not invent capabilities.
-    return templates[cat], '基础中文说明（按标签归类）'
+    return templates.get(cat, f'这是一个{cat}相关的开源项目。主要作用请参照下方原始简介和仓库文档；当前尚未完成具体功能的中文整理。'), '基础中文说明（按标签归类）'
 
 
 def snapshot_delta(history, stars, now):
@@ -172,7 +182,7 @@ def build_item(repo, signals, history, now):
     if not reasons:
         reasons.append('来自近期活跃候选池；尚无足够快照确认短期增长')
     intro, intro_source = basic_intro(repo, cat)
-    return {
+    item = {
         'name': name, 'url': f'https://github.com/{name}', 'description': safe_text(repo.get('description') or '', 400),
         'summary_zh': intro, 'summary_source': intro_source, 'why_zh': '；'.join(reasons) + '。',
         'language': safe_text(repo.get('language') or '未标注', 40), 'stars': stars,
@@ -181,6 +191,73 @@ def build_item(repo, signals, history, now):
         'category': cat, 'score': round(score, 2),
         'is_new': not prior_days, 'sources': sources, 'created_at': repo['created_at'],
     }
+
+    item.update(trend_metrics(item, history, now))
+    return item
+
+
+def trend_metrics(item, history, now):
+    day = now.astimezone(CN).date()
+    samples = []
+    for sample in history.get('samples', []):
+        at = datetime.fromisoformat(sample['at'])
+        if timedelta(0) < now - at <= timedelta(days=7) and at.astimezone(CN).date() < day:
+            samples.append(sample)
+    samples.sort(key=lambda x: x['at'])
+    rate = (max(0, item['snapshot_delta']) * 24 / item['snapshot_hours']
+            if item['snapshot_delta'] is not None else None)
+    heat = item['stars_today'] if item['stars_today'] is not None else rate
+    previous = samples[-1] if samples else {}
+    heat_source = 'trending' if item['stars_today'] is not None else 'snapshot'
+    previous_heat = previous.get('heat') if previous.get('heat_source', heat_source) == heat_source else None
+    first = history.get('first_seen') or (history.get('samples') or [{}])[0].get('at') or (min(history['featured_dates']) + 'T00:00:00+08:00' if history.get('featured_dates') else now.isoformat())
+    days_seen = (day - datetime.fromisoformat(first).astimezone(CN).date()).days
+    accelerated = (heat is not None and previous_heat is not None
+                   and heat >= max(10, previous_heat * 1.8) and heat - previous_heat >= 5)
+    recent_heat = [x.get('heat') if x.get('heat_source', heat_source) == heat_source else None for x in samples[-2:]]
+    warming = (len(recent_heat) == 2 and all(x is not None for x in recent_heat)
+               and heat is not None and 0 < recent_heat[0] < recent_heat[1] < heat)
+    status = 'accelerating' if accelerated else 'warming' if warming else 'new' if days_seen == 0 else 'watching'
+    labels = {'accelerating': '🔥 突然加速', 'warming': '📈 持续升温', 'new': '🆕 今日新出现', 'watching': '观察中'}
+    featured = any((day - timedelta(days=7)).isoformat() <= d < day.isoformat() for d in history.get('featured_dates', []))
+    meaningful = accelerated or warming
+    eligible = not featured or meaningful
+    score = item['score'] + (25 if meaningful else 0)
+    if 0 <= days_seen <= 7 and item['stars'] < 10000:
+        score += 15 + 10 / (1 + item['stars'] / 1000)
+    oldest = samples[0] if samples else None
+    return {'is_ai': item['category'] in AI_CATEGORIES, 'status': status, 'status_label': labels[status],
+            'is_new': days_seen == 0, 'first_seen': first, 'days_observed': days_seen,
+            'heat': round(heat, 2) if heat is not None else None, 'heat_source': heat_source, 'previous_heat': previous_heat,
+            'heat_change': round(heat - previous_heat, 2) if heat is not None and previous_heat is not None else None,
+            'previous_rank': previous.get('rank'), 'eligible': eligible, 'score': round(score, 2),
+            'window_star_delta': item['stars'] - oldest['stars'] if oldest else None,
+            'window_days': round((now - datetime.fromisoformat(oldest['at'])).total_seconds() / 86400, 1) if oldest else None}
+
+
+def select_daily(items):
+    ranked = sorted(items, key=lambda p: (-p['score'], p['name']))
+    for rank, item in enumerate(ranked, 1):
+        item['rank'] = rank
+        item['rank_change'] = item['previous_rank'] - rank if item.get('previous_rank') is not None else None
+    eligible = [p for p in ranked if p['eligible']]
+    ai = []
+    for cat in AI_CATEGORIES:
+        match = next((p for p in eligible if p['category'] == cat and p['is_ai']), None)
+        if match:
+            ai.append(match)
+    for p in eligible:
+        if p['is_ai'] and p not in ai and len(ai) < 15:
+            ai.append(p)
+    ai.sort(key=lambda p: (-p['score'], p['name']))
+    names = {p['name'] for p in ai}
+    # The five wildcard slots span all GitHub, including AI projects outside the AI quota.
+    wild = [p for p in eligible if p['name'] not in names and p.get('heat') is not None and p['heat'] >= 10][:5]
+    for p in ai:
+        p['lane'] = 'AI 优先'
+    for p in wild:
+        p['lane'] = '全站爆发'
+    return ai + wild
 
 
 def enrich_chinese(items):
@@ -428,6 +505,7 @@ def hot_selection(items, catalog, day, limit=5):
             break
     return selected
 
+
 def scan():
     now = datetime.now(UTC)
     day = now.astimezone(CN).date().isoformat()
@@ -456,31 +534,28 @@ def scan():
     except (requests.RequestException, ValueError):
         warnings.append('GitHub Trending 暂不可用，本次使用搜索与历史跟踪候选。')
 
-    since = (now - timedelta(days=60)).date().isoformat()
+    since = (now - timedelta(days=7)).date().isoformat()
     active = (now - timedelta(days=7)).date().isoformat()
-    queries = [
-        f'created:>{since} stars:>80 archived:false fork:false',
-        f'topic:ai pushed:>{active} stars:>200 archived:false fork:false',
-        f'topic:ai-agent pushed:>{active} stars:>100 archived:false fork:false',
-        f'topic:developer-tools pushed:>{active} stars:>100 archived:false fork:false',
-        f'topic:automation pushed:>{active} stars:>100 archived:false fork:false',
-    ]
+    queries = [f'created:>{since} stars:>=5 archived:false fork:false']
+    for topic in ('ai-agent', 'coding-agent', 'mcp', 'ollama', 'text-to-speech', 'text-to-video', 'rag', 'ai-memory', 'llm', 'ai'):
+        queries.append(f'topic:{topic} pushed:>{active} stars:5..10000 archived:false fork:false')
+    queries.append(f'pushed:>{active} stars:20..3000 archived:false fork:false')
     for index, query in enumerate(queries):
         try:
-            found = github('search/repositories', {'q': query, 'sort': 'stars' if index == 0 else 'updated', 'per_page': 12})
+            found = github('search/repositories', {'q': query, 'sort': 'stars' if index == 0 else 'updated', 'per_page': 25})
             for repo in found.get('items', []):
                 add(repo['full_name'], 'new-repository' if index == 0 else 'active-topic')
                 metadata[repo['full_name']] = repo
         except (requests.RequestException, ValueError, KeyError):
             warnings.append('部分 GitHub 搜索暂不可用，已使用其他候选来源。')
-        time.sleep(2)
+        time.sleep(7)
 
     # Maintain coverage of recently tracked repositories even after they leave Trending.
-    for name, hist in sorted(histories.items(), key=lambda kv: kv[1].get('last_seen', ''), reverse=True)[:35]:
+    for name, hist in sorted(histories.items(), key=lambda kv: kv[1].get('last_seen', ''), reverse=True)[:150]:
         add(name, 'tracked')
 
     items = []
-    for name, signals in list(candidates.items())[:110]:
+    for name, signals in list(candidates.items()):
         try:
             repo = metadata.get(name) or github(f'repos/{name}')
             if repo.get('archived') or repo.get('fork') or repo.get('private'):
@@ -489,10 +564,10 @@ def scan():
             hist = histories.get(canonical, {})
             item = build_item(repo, signals, hist, now)
             items.append(item)
-            samples = [s for s in hist.get('samples', []) if s.get('at', '') >= (now - timedelta(days=8)).isoformat()
+            samples = [s for s in hist.get('samples', []) if s.get('at', '') >= (now - timedelta(days=14)).isoformat()
                        and datetime.fromisoformat(s['at']).astimezone(CN).date().isoformat() != day]
-            samples.append({'at': now.isoformat(), 'stars': item['stars']})
-            histories[canonical] = {'samples': samples, 'last_seen': now.isoformat(),
+            samples.append({'at': now.isoformat(), 'stars': item['stars'], 'heat': item['heat'], 'heat_source': item['heat_source']})
+            histories[canonical] = {'samples': samples, 'last_seen': now.isoformat(), 'first_seen': item['first_seen'],
                                    'featured_dates': hist.get('featured_dates', [])[-30:],
                                    'practical_dates': hist.get('practical_dates', [])[-30:],
                                    'guide': hist.get('guide')}
@@ -510,38 +585,25 @@ def scan():
             return
         raise RuntimeError('No data available; refusing to publish an empty digest.')
 
-    for name, hist in histories.items():
-        if name not in catalog and valid_guide(hist.get('guide')):
-            catalog[name] = hist['guide']
-    discovered = discover_guides(items, catalog, now)
-    catalog.update(discovered)
-    for name, guide in discovered.items():
-        if name in histories:
-            histories[name]['guide'] = guide
-    practical_selected, library = practical_selection(items, histories, now, catalog)
-    selected = hot_selection(items, catalog, day, limit=5)
-    if not selected:
-        if previous.get('projects'):
-            previous.update({'status': 'stale', 'last_attempt_at': now.isoformat(), 'warnings': ['本次没有获得可展示的热门项目，保留上次结果。']})
-            save_json(DATA / 'trending.json', previous)
-            return
-        raise RuntimeError('No daily hot projects available')
-    mode = 'mixed' if any(p['guide'].get('generated') for p in library) else 'documented'
+    selected = select_daily(items)
+    mode = enrich_chinese(selected)
+    for item in items:
+        histories[item['name']]['samples'][-1]['rank'] = item['rank']
     for p in selected:
         dates = histories[p['name']]['featured_dates']
         if day not in dates:
             dates.append(day)
         histories[p['name']]['featured_dates'] = dates[-30:]
-        practical_dates = histories[p['name']]['practical_dates']
-        if day not in practical_dates:
-            practical_dates.append(day)
-        histories[p['name']]['practical_dates'] = practical_dates[-30:]
+    if len(selected) < 20:
+        warnings.append('符合新发现或明显升温条件的项目不足 20 个，未用无变化的重复项目凑数。')
     histories = {k: v for k, v in histories.items() if v['last_seen'] >= (now - timedelta(days=30)).isoformat()}
     warnings = list(dict.fromkeys(warnings))
-    digest = {'schema_version': 2, 'updated_at': now.isoformat(), 'date': day,
+    digest = {'schema_version': 3, 'updated_at': now.isoformat(), 'date': day,
               'last_attempt_at': now.isoformat(), 'status': 'partial' if warnings else 'ok',
               'summary_mode': mode, 'candidate_count': len(items), 'warnings': warnings, 'projects': selected,
-              'library': library, 'discovery_mode': 'daily-hot-plus-library'}
+              'library': selected, 'discovery_mode': 'ai-first', 'history_days': 14,
+              'ai_count': sum(p['lane'] == 'AI 优先' for p in selected),
+              'wildcard_count': sum(p['lane'] == '全站爆发' for p in selected)}
     save_json(DATA / 'trending.json', digest)
     save_json(DATA / 'history.json', {'repos': histories})
     print(f'Scanned {len(items)} repositories; selected {len(selected)} projects; Chinese mode: {mode}.')

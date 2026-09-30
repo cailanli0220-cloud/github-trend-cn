@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0d1117">
-  <meta name="description" content="每天扫描 GitHub 热门与活跃开源项目，并保留可执行的实用工具指南。>
-  <title>GitHub 每日热门 · 开源工具实用指南</title>
+  <meta name="description" content="AI 优先的 GitHub 每日趋势，发现新出现、突然加速和持续升温的项目。">
+  <title>GitHub AI 趋势日报</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
   <script src="./app.js" defer></script>
@@ -15,23 +15,23 @@
   <div class="shell">
     <header>
       <div class="masthead"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">↗</span> OPEN SOURCE / 每日发现</a><a class="source-link" href="https://github.com/cailanli0220-cloud/github-trend-cn" target="_blank" rel="noopener noreferrer">看板源码 ↗</a></div>
-      <div class="heading"><div><p class="eyebrow">OPEN SOURCE, PUT TO WORK</p><h1>GitHub 每日热门<span class="accent">.</span></h1><p class="subtitle">先看今天真正热起来的项目，再进入实用工具库。</p></div><div class="edition"><span>每日 09:00 左右更新 · 北京时间</span><time id="updated">正在获取最后更新时间…</time></div></div>
+      <div class="heading"><div><p class="eyebrow">OPEN SOURCE, PUT TO WORK</p><h1>GitHub AI 趋势日报<span class="accent">.</span></h1><p class="subtitle">每天约 20 个项目，优先发现 AI 领域正在升温的小项目。</p></div><div class="edition"><span>每日 09:00 左右更新 · 北京时间</span><time id="updated">正在获取最后更新时间…</time></div></div>
     </header>
     <main>
-      <div class="overview" aria-label="今日概览"><div><span id="total">—</span><small>今日热门</small></div><div><span id="newCount">—</span><small>安装即用</small></div><div><span id="candidateCount">—</span><small>工具库指南</small></div><p>先看用途，再决定是否安装。<br><span>费用、门槛和限制，一起说清楚。</span></p></div>
+      <div class="overview" aria-label="今日概览"><div><span id="total">—</span><small>今日精选</small></div><div><span id="newCount">—</span><small>AI 项目</small></div><div><span id="candidateCount">—</span><small>扫描候选</small></div><p>15 个 AI 项目 + 5 个全站爆发项目。<br><span>跟踪近 7 天变化，少看重复老项目。</span></p></div>
       <section class="controls" aria-label="项目筛选">
-        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="我想… 清理表格 / 压缩视频 / 传文件" autocomplete="off" aria-label="搜索任务或工具"></label>
-        <div class="selects"><label><span class="sr-only">浏览范围</span><select id="scope"><option value="daily">今日热门</option><option value="library">全部工具指南</option></select></label><label><span class="sr-only">排序方式</span><select id="sort"><option value="heat">实用优先</option><option value="growth">今日增长</option><option value="stars">总 Star 数</option><option value="new">今日新增优先</option></select></label></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索项目、用途、AI 分类…" autocomplete="off" aria-label="搜索项目或用途"></label>
+        <div class="selects"><label><span class="sr-only">浏览范围</span><select id="scope"><option value="daily">今日精选</option><option value="library">全部精选</option></select></label><label><span class="sr-only">排序方式</span><select id="sort"><option value="heat">趋势优先</option><option value="growth">今日增长</option><option value="stars">总 Star 数</option><option value="new">今日新增优先</option></select></label></div>
       </section>
-      <nav class="categories" aria-label="我想做什么"><button data-category="" class="active" aria-pressed="true">全部任务</button><button data-category="办公自动化" aria-pressed="false">处理办公事务</button><button data-category="内容创作" aria-pressed="false">制作内容</button><button data-category="编程开发" aria-pressed="false">编程与调试</button></nav>
-      <div class="secondary-filters"><label class="easy-filter"><input type="checkbox" id="easyOnly"> 只看安装即用</label><label><span class="sr-only">编程语言</span><select id="language"><option value="">全部语言</option></select></label></div>
+      <nav class="categories" aria-label="AI 分类"><button data-category="" class="active" aria-pressed="true">全部项目</button><button data-category="Agent" aria-pressed="false">Agent</button><button data-category="Coding Agent" aria-pressed="false">Coding Agent</button><button data-category="MCP" aria-pressed="false">MCP</button><button data-category="本地模型" aria-pressed="false">本地模型</button><button data-category="语音/视频" aria-pressed="false">语音/视频</button><button data-category="RAG/Memory" aria-pressed="false">RAG/Memory</button><button data-category="AI 应用" aria-pressed="false">AI 应用</button><button data-category="开发工具" aria-pressed="false">开发工具</button><button data-category="自动化" aria-pressed="false">自动化</button><button data-category="其他开源" aria-pressed="false">其他开源</button></nav>
+      <div class="secondary-filters"><label class="easy-filter"><input type="checkbox" id="easyOnly"> 只看 AI 项目</label><label><span class="sr-only">编程语言</span><select id="language"><option value="">全部语言</option></select></label></div>
       <div id="notice" class="notice" hidden></div>
-      <div class="list-heading"><h2>今天 GitHub 上哪些项目正在升温</h2><span id="resultCount" role="status" aria-live="polite">加载中…</span></div>
+      <div class="list-heading"><h2>今天有哪些新变化</h2><span id="resultCount" role="status" aria-live="polite">加载中…</span></div>
       <p id="discoveryNote" class="discovery-note"></p>
       <div id="cards" class="cards" aria-busy="true"><p class="empty">正在加载今日项目…</p></div>
       <div id="empty" class="empty" hidden><h3>没有找到匹配项目</h3><p>换个关键词，或清除筛选重新看看。</p><button id="reset">清除筛选</button></div>
       <div id="error" class="empty" hidden><h3>暂时无法加载数据</h3><p>请检查网络后重试。已有的线上数据不会因此被删除。</p><button id="retry">重新加载</button></div>
-      <details class="method"><summary>怎么选工具？哪些信息经过验证？</summary><p>首页每天最多展示五个热门项目，优先采用 GitHub Trending 日榜，再由近期活跃候选补足；“全部工具指南”继续保留经过整理的实用工具库。热门项目若尚未整理完整指南，会明确标注为未安装实测并引导查看官方 README。</p><p>卡片中的来源与查阅日期可展开查看。“官方文档整理”不等于安装实测。配置、费用和兼容性可能变化，未核实的信息会明确标注。成熟工具也会入选，不把每日推荐冒充今日新发布。</p><p>无 DeepSeek Key 时使用已整理的工具库，并每天更新仓库信息；配置 Key 后可从新候选的 README 自动整理额外指南。AI 结果单独标注，服务异常时继续使用已有指南。</p><p>“今日 +”来自 GitHub Trending；快照增长显示实际间隔。“今日新增”表示首次进入实用精选。全部工具指南可随时查看，不受当天推荐影响。</p></details>
+      <details class="method"><summary>如何识别趋势？</summary><p>每天目标约 15 个 AI 项目与 5 个全 GitHub 爆发项目，候选不足时不凑数。覆盖 AI 主题搜索、近 7 天新建仓库、Trending 与历史跟踪；对低于 1 万 Star、最近 1–7 天发现的项目加权。</p><p>🆕 今日新出现：首次进入扫描候选池，不等于新建仓库。🔥 突然加速：日热度达到上次的 1.8 倍、至少 10 且增加至少 5。📈 持续升温：连续三次有效日样本热度递增。最近 7 天入选过的项目，只有明显加速或持续升温才重复推荐。</p><p>保存 14 天每日快照，比对近 7 天 Star、热度和候选池排名。热度优先使用 Trending 今日 Star，否则使用实际快照间隔折算的每日 Star 增量。缺失数据不当成零；候选池改变也会影响排名。首次运行需要积累历史才能判断加速。</p><p>中文介绍依据公开仓库资料整理；AI 服务不可用时保留分类基础说明与原始简介。每天北京时间约 09:00 自动更新，GitHub 调度可能延迟。</p></details>
     </main>
     <footer><span>为好奇心留一点时间。</span><span>数据来源 <a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending</a> / GitHub API</span></footer>
   </div>
