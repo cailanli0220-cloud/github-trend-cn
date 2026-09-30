@@ -1,25 +1,253 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-29T01:08:23.697500+00:00",
-  "date": "2026-09-29",
-  "last_attempt_at": "2026-09-29T01:08:23.697500+00:00",
+  "updated_at": "2026-09-30T01:08:48.427873+00:00",
+  "date": "2026-09-30",
+  "last_attempt_at": "2026-09-30T01:08:48.427873+00:00",
   "status": "ok",
   "summary_mode": "documented",
-  "candidate_count": 95,
+  "candidate_count": 97,
   "warnings": [],
   "projects": [
+    {
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "summary_zh": "ai-engineering-from-scratch：Learn it. Build it. Ship it for others.",
+      "summary_source": "公开仓库信息整理 · 未安装实测",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 786 Star；距上次有效快照约 24 小时，Star 净变化 +981。",
+      "language": "Python",
+      "stars": 61392,
+      "stars_today": 786,
+      "snapshot_delta": 981,
+      "snapshot_hours": 24.0,
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-engineering",
+        "computer-vision",
+        "course",
+        "deep-learning",
+        "from-scratch"
+      ],
+      "category": "编程开发",
+      "score": 158.84,
+      "is_new": false,
+      "sources": [
+        "trending",
+        "tracked"
+      ],
+      "created_at": "2026-03-18T18:38:02Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "快速了解 ai-engineering-from-scratch 并判断是否值得试用",
+        "summary": "ai-engineering-from-scratch：Learn it. Build it. Ship it for others.",
+        "audience": "关注新开源项目、愿意先阅读官方文档再试用的人",
+        "difficulty": "需要查看文档",
+        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
+        "api_key": "是否需要 API Key 以官方 README 为准",
+        "platform": "以官方 README 和 Releases 说明为准",
+        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
+        "steps": [
+          "先看 ai-engineering-from-scratch 的 README 与项目简介，确认它解决的问题。",
+          "查看 Quick Start、安装方式和依赖要求。",
+          "在测试环境运行最小示例，再决定是否正式使用。"
+        ],
+        "result": "判断 ai-engineering-from-scratch 是否适合你的场景，并找到官方安装或快速开始入口。",
+        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
+        "entry_url": "https://github.com/rohitg00/ai-engineering-from-scratch#readme",
+        "entry_label": "查看官方 README",
+        "demo": "在线体验入口未核实",
+        "sources": [
+          "https://github.com/rohitg00/ai-engineering-from-scratch#readme"
+        ],
+        "reviewed_at": "2026-09-30",
+        "generated": true
+      },
+      "practical_score": 158.84
+    },
+    {
+      "name": "cs341-illinois/coursebook",
+      "url": "https://github.com/cs341-illinois/coursebook",
+      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+      "summary_zh": "coursebook：Open Source Introductory Systems Programming Textbook for the University of Illinois",
+      "summary_source": "公开仓库信息整理 · 未安装实测",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 572 Star；距上次有效快照约 24 小时，Star 净变化 +591。",
+      "language": "TeX",
+      "stars": 3108,
+      "stars_today": 572,
+      "snapshot_delta": 591,
+      "snapshot_hours": 24.0,
+      "topics": [
+        "awesome",
+        "c",
+        "latex",
+        "linux",
+        "posix",
+        "system-programming",
+        "wikibook"
+      ],
+      "category": "编程开发",
+      "score": 155.86,
+      "is_new": true,
+      "sources": [
+        "trending"
+      ],
+      "created_at": "2018-01-26T15:30:07Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "快速了解 coursebook 并判断是否值得试用",
+        "summary": "coursebook：Open Source Introductory Systems Programming Textbook for the University of Illinois",
+        "audience": "关注新开源项目、愿意先阅读官方文档再试用的人",
+        "difficulty": "需要查看文档",
+        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
+        "api_key": "是否需要 API Key 以官方 README 为准",
+        "platform": "以官方 README 和 Releases 说明为准",
+        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
+        "steps": [
+          "先看 coursebook 的 README 与项目简介，确认它解决的问题。",
+          "查看 Quick Start、安装方式和依赖要求。",
+          "在测试环境运行最小示例，再决定是否正式使用。"
+        ],
+        "result": "判断 coursebook 是否适合你的场景，并找到官方安装或快速开始入口。",
+        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
+        "entry_url": "https://github.com/cs341-illinois/coursebook#readme",
+        "entry_label": "查看官方 README",
+        "demo": "在线体验入口未核实",
+        "sources": [
+          "https://github.com/cs341-illinois/coursebook#readme"
+        ],
+        "reviewed_at": "2026-09-30",
+        "generated": true
+      },
+      "practical_score": 155.86
+    },
+    {
+      "name": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Multi-agent harness that runs Claude Code and Codex together as one system",
+      "summary_zh": "openrig 是多智能体编排工具，用来把多个编码 Agent 组合成一个协作系统；仓库介绍明确提到 Claude Code 与 Codex。",
+      "summary_source": "公开仓库信息整理 · 未安装实测",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 737 Star；距上次有效快照约 24 小时，Star 净变化 +723。",
+      "language": "TypeScript",
+      "stars": 2447,
+      "stars_today": 737,
+      "snapshot_delta": 723,
+      "snapshot_hours": 24.0,
+      "topics": [
+        "agent-harness",
+        "agent-orchestration",
+        "agent-skills",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "codex-cli",
+        "multi-agent"
+      ],
+      "category": "编程开发",
+      "score": 150.09,
+      "is_new": false,
+      "sources": [
+        "trending"
+      ],
+      "created_at": "2026-04-01T06:22:40Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "让 Claude Code 与 Codex 等编码 Agent 协同工作",
+        "summary": "openrig 是多智能体编排工具，用来把多个编码 Agent 组合成一个协作系统；仓库介绍明确提到 Claude Code 与 Codex。",
+        "audience": "正在用 Codex、Claude Code 或多 Agent 编程流程的开发者",
+        "difficulty": "需要查看文档",
+        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
+        "api_key": "是否需要 API Key 以官方 README 为准",
+        "platform": "以官方 README 和 Releases 说明为准",
+        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
+        "steps": [
+          "先看 README 的 Agent 组成和调用方式。",
+          "用一个小型测试仓库运行官方示例。",
+          "再检查权限、成本和多个 Agent 的冲突处理方式。"
+        ],
+        "result": "确认多个编码 Agent 能否按你的工作流分工、协作和汇总结果。",
+        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
+        "entry_url": "https://github.com/mvschwarz/openrig#readme",
+        "entry_label": "查看官方 README",
+        "demo": "在线体验入口未核实",
+        "sources": [
+          "https://github.com/mvschwarz/openrig#readme"
+        ],
+        "reviewed_at": "2026-09-30",
+        "generated": true
+      },
+      "practical_score": 150.09
+    },
+    {
+      "name": "t8y2/dbx",
+      "url": "https://github.com/t8y2/dbx",
+      "description": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+      "summary_zh": "dbx：25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+      "summary_source": "公开仓库信息整理 · 未安装实测",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 232 Star；距上次有效快照约 120 小时，Star 净变化 +1,365。",
+      "language": "Rust",
+      "stars": 22021,
+      "stars_today": 232,
+      "snapshot_delta": 1365,
+      "snapshot_hours": 120.0,
+      "topics": [
+        "ai",
+        "cli",
+        "clickhouse",
+        "database",
+        "database-client",
+        "database-management",
+        "docker",
+        "gui"
+      ],
+      "category": "编程开发",
+      "score": 138.59,
+      "is_new": true,
+      "sources": [
+        "trending"
+      ],
+      "created_at": "2026-04-29T03:00:36Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "快速了解 dbx 并判断是否值得试用",
+        "summary": "dbx：25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+        "audience": "关注新开源项目、愿意先阅读官方文档再试用的人",
+        "difficulty": "需要查看文档",
+        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
+        "api_key": "是否需要 API Key 以官方 README 为准",
+        "platform": "以官方 README 和 Releases 说明为准",
+        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
+        "steps": [
+          "先看 dbx 的 README 与项目简介，确认它解决的问题。",
+          "查看 Quick Start、安装方式和依赖要求。",
+          "在测试环境运行最小示例，再决定是否正式使用。"
+        ],
+        "result": "判断 dbx 是否适合你的场景，并找到官方安装或快速开始入口。",
+        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
+        "entry_url": "https://github.com/t8y2/dbx#readme",
+        "entry_label": "查看官方 README",
+        "demo": "在线体验入口未核实",
+        "sources": [
+          "https://github.com/t8y2/dbx#readme"
+        ],
+        "reviewed_at": "2026-09-30",
+        "generated": true
+      },
+      "practical_score": 138.59
+    },
     {
       "name": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "summary_zh": "VoiceStudio 是本地语音创作工具；仓库介绍包含语音克隆、声音设计、视频配音、听写、转写和有声书等能力。",
       "summary_source": "公开仓库信息整理 · 未安装实测",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,221 Star；距上次有效快照约 48 小时，Star 净变化 +7,186。",
+      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 4,758 Star；距上次有效快照约 24 小时，Star 净变化 +4,019。",
       "language": "Python",
-      "stars": 44132,
-      "stars_today": 3221,
-      "snapshot_delta": 7186,
-      "snapshot_hours": 48.0,
+      "stars": 48151,
+      "stars_today": 4758,
+      "snapshot_delta": 4019,
+      "snapshot_hours": 24.0,
       "topics": [
         "ai",
         "audiobook",
@@ -31,7 +259,7 @@
         "mlx"
       ],
       "category": "内容创作",
-      "score": 160.95,
+      "score": 137.99,
       "is_new": false,
       "sources": [
         "trending"
@@ -60,222 +288,10 @@
         "sources": [
           "https://github.com/debpalash/VoiceStudio#readme"
         ],
-        "reviewed_at": "2026-09-29",
+        "reviewed_at": "2026-09-30",
         "generated": true
       },
-      "practical_score": 160.95
-    },
-    {
-      "name": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "summary_zh": "paperclip 是面向工作场景的 Agent 管理应用，用于集中组织和管理多个 AI Agent。",
-      "summary_source": "公开仓库信息整理 · 未安装实测",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 3,197 Star；距上次有效快照约 48 小时，Star 净变化 +5,483。",
-      "language": "TypeScript",
-      "stars": 92828,
-      "stars_today": 3197,
-      "snapshot_delta": 5483,
-      "snapshot_hours": 48.0,
-      "topics": [],
-      "category": "编程开发",
-      "score": 154.8,
-      "is_new": false,
-      "sources": [
-        "trending"
-      ],
-      "created_at": "2026-03-02T15:01:51Z",
-      "guide": {
-        "category": "编程开发",
-        "task": "集中管理工作中的 AI Agents",
-        "summary": "paperclip 是面向工作场景的 Agent 管理应用，用于集中组织和管理多个 AI Agent。",
-        "audience": "同时运行多个 AI Agent、需要统一管理任务和状态的团队或个人",
-        "difficulty": "需要查看文档",
-        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
-        "api_key": "是否需要 API Key 以官方 README 为准",
-        "platform": "以官方 README 和 Releases 说明为准",
-        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
-        "steps": [
-          "先看 README 的 Agent 接入范围。",
-          "启动官方演示或本地版本并接入一个测试 Agent。",
-          "检查任务、状态和权限管理是否满足需求。"
-        ],
-        "result": "确认它是否能统一管理你现在使用的多个 Agent。",
-        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
-        "entry_url": "https://github.com/paperclipai/paperclip#readme",
-        "entry_label": "查看官方 README",
-        "demo": "在线体验入口未核实",
-        "sources": [
-          "https://github.com/paperclipai/paperclip#readme"
-        ],
-        "reviewed_at": "2026-09-29",
-        "generated": true
-      },
-      "practical_score": 154.8
-    },
-    {
-      "name": "vectorize-io/hindsight",
-      "url": "https://github.com/vectorize-io/hindsight",
-      "description": "Hindsight: Agent Memory That Learns",
-      "summary_zh": "hindsight 聚焦 AI Agent 记忆，让智能体保存、检索并利用过去的信息，而不是每次都从零开始。",
-      "summary_source": "公开仓库信息整理 · 未安装实测",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 4,561 Star；距上次有效快照约 48 小时，Star 净变化 +8,782。",
-      "language": "Python",
-      "stars": 40995,
-      "stars_today": 4561,
-      "snapshot_delta": 8782,
-      "snapshot_hours": 48.0,
-      "topics": [
-        "agentic-ai",
-        "agents",
-        "ai-memory",
-        "memory"
-      ],
-      "category": "编程开发",
-      "score": 139.86,
-      "is_new": false,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2025-10-30T11:49:48Z",
-      "guide": {
-        "category": "编程开发",
-        "task": "给 AI Agent 增加可学习的长期记忆",
-        "summary": "hindsight 聚焦 AI Agent 记忆，让智能体保存、检索并利用过去的信息，而不是每次都从零开始。",
-        "audience": "开发 AI Agent、聊天助手或长期任务系统的开发者",
-        "difficulty": "需要查看文档",
-        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
-        "api_key": "是否需要 API Key 以官方 README 为准",
-        "platform": "以官方 README 和 Releases 说明为准",
-        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
-        "steps": [
-          "先看 README 的核心概念和架构图。",
-          "运行官方最小示例，写入并检索一条记忆。",
-          "检查与现有 Agent/模型框架的接入方式。"
-        ],
-        "result": "确认它的记忆接口和存储方式是否能接入你的 Agent 架构。",
-        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
-        "entry_url": "https://github.com/vectorize-io/hindsight#readme",
-        "entry_label": "查看官方 README",
-        "demo": "在线体验入口未核实",
-        "sources": [
-          "https://github.com/vectorize-io/hindsight#readme"
-        ],
-        "reviewed_at": "2026-09-29",
-        "generated": true
-      },
-      "practical_score": 139.86
-    },
-    {
-      "name": "dream-num/univer",
-      "url": "https://github.com/dream-num/univer",
-      "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-      "summary_zh": "univer 提供面向 AI Agent 的办公文档运行环境，把表格、文档、幻灯片、画布、关系表和 PDF 放到同一套能力里。",
-      "summary_source": "公开仓库信息整理 · 未安装实测",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 1,099 Star；距上次有效快照约 48 小时，Star 净变化 +2,038。",
-      "language": "TypeScript",
-      "stars": 21267,
-      "stars_today": 1099,
-      "snapshot_delta": 2038,
-      "snapshot_hours": 48.0,
-      "topics": [
-        "board",
-        "collaboration",
-        "data-table",
-        "doc",
-        "docx",
-        "excel",
-        "grid",
-        "pdf"
-      ],
-      "category": "办公自动化",
-      "score": 119.02,
-      "is_new": false,
-      "sources": [
-        "trending",
-        "tracked"
-      ],
-      "created_at": "2022-09-29T12:09:14Z",
-      "guide": {
-        "category": "办公自动化",
-        "task": "让 AI Agent 操作表格、文档、幻灯片和 PDF",
-        "summary": "univer 提供面向 AI Agent 的办公文档运行环境，把表格、文档、幻灯片、画布、关系表和 PDF 放到同一套能力里。",
-        "audience": "做办公自动化、AI 助手或文档处理产品的开发者",
-        "difficulty": "需要查看文档",
-        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
-        "api_key": "是否需要 API Key 以官方 README 为准",
-        "platform": "以官方 README 和 Releases 说明为准",
-        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
-        "steps": [
-          "先查看支持的文档类型和 API。",
-          "运行官方示例，优先测试表格或文档操作。",
-          "再评估协作、导入导出和部署要求。"
-        ],
-        "result": "确认它能否作为你的 Agent 办公文档操作层。",
-        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
-        "entry_url": "https://github.com/dream-num/univer#readme",
-        "entry_label": "查看官方 README",
-        "demo": "在线体验入口未核实",
-        "sources": [
-          "https://github.com/dream-num/univer#readme"
-        ],
-        "reviewed_at": "2026-09-29",
-        "generated": true
-      },
-      "practical_score": 119.02
-    },
-    {
-      "name": "byoungd/up",
-      "url": "https://github.com/byoungd/up",
-      "description": "An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-      "summary_zh": "up：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-      "summary_source": "公开仓库信息整理 · 未安装实测",
-      "why_zh": "进入 GitHub Trending 日榜；Trending 显示今日新增 327 Star。",
-      "language": "JavaScript",
-      "stars": 64687,
-      "stars_today": 327,
-      "snapshot_delta": null,
-      "snapshot_hours": null,
-      "topics": [
-        "chinese",
-        "english-learning",
-        "tutorial"
-      ],
-      "category": "编程开发",
-      "score": 101.14,
-      "is_new": true,
-      "sources": [
-        "trending"
-      ],
-      "created_at": "2017-05-30T07:18:52Z",
-      "guide": {
-        "category": "编程开发",
-        "task": "快速了解 up 并判断是否值得试用",
-        "summary": "up：An advanced guide which might benefit you a lot 🎉 . 韩先凯的人生进阶指南 人生进阶指南 离谱的人生 人生进阶 AI学习 AI指南 韩先凯的AI学习指南 英语学习指南/英语学习教程/英语学习/学英语",
-        "audience": "关注新开源项目、愿意先阅读官方文档再试用的人",
-        "difficulty": "需要查看文档",
-        "cost": "开源仓库；模型、云服务或第三方 API 费用以官方说明为准",
-        "api_key": "是否需要 API Key 以官方 README 为准",
-        "platform": "以官方 README 和 Releases 说明为准",
-        "hardware": "以官方 README 的系统、内存和 GPU 要求为准",
-        "steps": [
-          "先看 up 的 README 与项目简介，确认它解决的问题。",
-          "查看 Quick Start、安装方式和依赖要求。",
-          "在测试环境运行最小示例，再决定是否正式使用。"
-        ],
-        "result": "判断 up 是否适合你的场景，并找到官方安装或快速开始入口。",
-        "limitations": "根据仓库公开简介与标签快速整理，未进行安装实测；具体功能、兼容性和费用请以官方文档为准。",
-        "entry_url": "https://github.com/byoungd/up#readme",
-        "entry_label": "查看官方 README",
-        "demo": "在线体验入口未核实",
-        "sources": [
-          "https://github.com/byoungd/up#readme"
-        ],
-        "reviewed_at": "2026-09-29",
-        "generated": true
-      },
-      "practical_score": 101.14
+      "practical_score": 137.99
     }
   ],
   "library": [
@@ -285,12 +301,12 @@
       "description": "OpenRefine is a free, open source power tool for working with messy data and improving it",
       "summary_zh": "在本机浏览器里清理杂乱的数据表，适合统一名称、发现异常值和批量整理字段，再导出干净的数据。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +2。",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +2。",
       "language": "Java",
-      "stars": 12014,
+      "stars": 12016,
       "stars_today": null,
       "snapshot_delta": 2,
-      "snapshot_hours": 48.0,
+      "snapshot_hours": 24.0,
       "topics": [
         "data-analysis",
         "data-science",
@@ -302,7 +318,7 @@
         "java"
       ],
       "category": "办公自动化",
-      "score": 2.82,
+      "score": 5.55,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -334,117 +350,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 24.23
-    },
-    {
-      "name": "astral-sh/uv",
-      "url": "https://github.com/astral-sh/uv",
-      "description": "An extremely fast Python package and project manager, written in Rust.",
-      "summary_zh": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
-      "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +53。",
-      "language": "Rust",
-      "stars": 90254,
-      "stars_today": null,
-      "snapshot_delta": 53,
-      "snapshot_hours": 48.0,
-      "topics": [
-        "packaging",
-        "python",
-        "resolver",
-        "uv"
-      ],
-      "category": "编程开发",
-      "score": 13.47,
-      "is_new": false,
-      "sources": [
-        "practical-library"
-      ],
-      "created_at": "2023-10-02T20:24:11Z",
-      "guide": {
-        "category": "编程开发",
-        "task": "给 Python 项目统一管理环境和依赖",
-        "summary": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
-        "audience": "使用 Python 的开发者；需要基本命令行经验",
-        "difficulty": "需要命令行",
-        "cost": "免费开源；下载依赖需要访问对应软件源",
-        "api_key": "基础使用不需要大模型 API Key",
-        "platform": "Windows / macOS / Linux",
-        "hardware": "通常不需要 GPU；磁盘和网络需求取决于项目依赖",
-        "steps": [
-          "先按官方安装文档安装 uv，并确认终端能识别它。",
-          "按官方 First steps 指南在新的测试目录初始化项目。",
-          "添加一个测试依赖并运行示例，检查项目文件与锁定文件。"
-        ],
-        "result": "一个可通过 uv 管理与重复运行的 Python 测试项目。",
-        "limitations": "不是图形界面软件；迁移现有项目之前需检查原有依赖与构建方式。",
-        "entry_url": "https://docs.astral.sh/uv/getting-started/first-steps/",
-        "entry_label": "查看入门步骤",
-        "demo": "命令行工具；无须在线账号即可做本地基础练习",
-        "sources": [
-          "https://github.com/astral-sh/uv",
-          "https://docs.astral.sh/uv/getting-started/first-steps/"
-        ],
-        "reviewed_at": "2026-09-24"
-      },
-      "practical_score": 21.12
-    },
-    {
-      "name": "paperless-ngx/paperless-ngx",
-      "url": "https://github.com/paperless-ngx/paperless-ngx",
-      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
-      "summary_zh": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
-      "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +66。",
-      "language": "Python",
-      "stars": 46131,
-      "stars_today": null,
-      "snapshot_delta": 66,
-      "snapshot_hours": 48.0,
-      "topics": [
-        "ai",
-        "angular",
-        "archiving",
-        "django",
-        "dms",
-        "document-management",
-        "document-management-system",
-        "llm"
-      ],
-      "category": "办公自动化",
-      "score": 22.48,
-      "is_new": false,
-      "sources": [
-        "practical-library"
-      ],
-      "created_at": "2022-02-12T21:56:52Z",
-      "guide": {
-        "category": "办公自动化",
-        "task": "把扫描件整理成可搜索的文档档案",
-        "summary": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
-        "audience": "有 NAS 或服务器经验、需要持续归档文件的人",
-        "difficulty": "需要部署",
-        "cost": "开源自托管；需要自行承担存储、备份和服务器成本",
-        "api_key": "基础归档不依赖付费大模型 Key",
-        "platform": "推荐 Docker Compose 部署，浏览器访问",
-        "hardware": "需部署环境和持久化存储；具体容量取决于文档数量",
-        "steps": [
-          "先打开官方演示，用非敏感测试资料了解流程。",
-          "决定正式使用后，按官方文档准备 Docker Compose 环境和备份。",
-          "导入一份测试扫描件，检查识别结果并尝试搜索。"
-        ],
-        "result": "能在自己的文档库里通过文字找到导入的测试文件。",
-        "limitations": "不是装完就无需维护的云服务；要自己负责备份与访问权限。公开演示会重置，请勿上传敏感文件。",
-        "entry_url": "https://demo.paperless-ngx.com",
-        "entry_label": "打开官方演示",
-        "demo": "有公开演示；仅使用非敏感测试文件",
-        "sources": [
-          "https://github.com/paperless-ngx/paperless-ngx",
-          "https://docs.paperless-ngx.com"
-        ],
-        "reviewed_at": "2026-09-24"
-      },
-      "practical_score": 17.87
+      "practical_score": 40.46
     },
     {
       "name": "usebruno/bruno",
@@ -452,12 +358,12 @@
       "description": "Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
       "summary_zh": "以本地文件保存 API 请求集合，可用 Git 跟踪变更，适合希望减少云端同步依赖的接口开发和测试工作。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +30。",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +27。",
       "language": "JavaScript",
-      "stars": 47250,
+      "stars": 47277,
       "stars_today": null,
-      "snapshot_delta": 30,
-      "snapshot_hours": 48.0,
+      "snapshot_delta": 27,
+      "snapshot_hours": 24.0,
       "topics": [
         "api-client",
         "api-testing",
@@ -469,7 +375,7 @@
         "javascript"
       ],
       "category": "编程开发",
-      "score": 15.05,
+      "score": 21.68,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -501,7 +407,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 17.25
+      "practical_score": 33.81
     },
     {
       "name": "localsend/localsend",
@@ -509,12 +415,12 @@
       "description": "An open-source cross-platform alternative to AirDrop",
       "summary_zh": "让 Windows、macOS、Linux、Android 和 iOS 设备在同一局域网里直接传文件，适合传照片、视频或工作资料。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +161。",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +80。",
       "language": "Dart",
-      "stars": 92925,
+      "stars": 93005,
       "stars_today": null,
-      "snapshot_delta": 161,
-      "snapshot_hours": 48.0,
+      "snapshot_delta": 80,
+      "snapshot_hours": 24.0,
       "topics": [
         "dart",
         "file-sharing",
@@ -522,7 +428,7 @@
         "flutter-apps"
       ],
       "category": "办公自动化",
-      "score": 13.9,
+      "score": 17.89,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -553,7 +459,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 17.16
+      "practical_score": 33.49
     },
     {
       "name": "HandBrake/HandBrake",
@@ -561,19 +467,19 @@
       "description": "HandBrake's development repository",
       "summary_zh": "用桌面界面转换视频，选择预设并预览编码结果。适合整理录屏、课程片段或准备发送给别人的视频。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +18。",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +9。",
       "language": "C",
-      "stars": 24527,
+      "stars": 24536,
       "stars_today": null,
-      "snapshot_delta": 18,
-      "snapshot_hours": 48.0,
+      "snapshot_delta": 9,
+      "snapshot_hours": 24.0,
       "topics": [
         "gplv2",
         "multi-platform",
         "video-transcoding"
       ],
       "category": "内容创作",
-      "score": 7.27,
+      "score": 9.37,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -605,7 +511,7 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 16.61
+      "practical_score": 32.78
     },
     {
       "name": "audacity/audacity",
@@ -613,12 +519,12 @@
       "description": "Audio Editor",
       "summary_zh": "多轨录音和音频编辑工具，可用于整理口播、访谈和简单的音频素材，适合先从一段短录音开始。",
       "summary_source": "官方文档整理 · 未安装实测",
-      "why_zh": "距上次有效快照约 48 小时，Star 净变化 +26。",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +8。",
       "language": "C++",
-      "stars": 18596,
+      "stars": 18604,
       "stars_today": null,
-      "snapshot_delta": 26,
-      "snapshot_hours": 48.0,
+      "snapshot_delta": 8,
+      "snapshot_hours": 24.0,
       "topics": [
         "audio",
         "cross-platform",
@@ -627,7 +533,7 @@
         "wxwidgets-applications"
       ],
       "category": "内容创作",
-      "score": 14.64,
+      "score": 17.07,
       "is_new": false,
       "sources": [
         "practical-library"
@@ -658,7 +564,117 @@
         ],
         "reviewed_at": "2026-09-24"
       },
-      "practical_score": 9.22
+      "practical_score": 25.42
+    },
+    {
+      "name": "astral-sh/uv",
+      "url": "https://github.com/astral-sh/uv",
+      "description": "An extremely fast Python package and project manager, written in Rust.",
+      "summary_zh": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +42。",
+      "language": "Rust",
+      "stars": 90296,
+      "stars_today": null,
+      "snapshot_delta": 42,
+      "snapshot_hours": 24.0,
+      "topics": [
+        "packaging",
+        "python",
+        "resolver",
+        "uv"
+      ],
+      "category": "编程开发",
+      "score": 15.3,
+      "is_new": false,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2023-10-02T20:24:11Z",
+      "guide": {
+        "category": "编程开发",
+        "task": "给 Python 项目统一管理环境和依赖",
+        "summary": "将 Python 环境、依赖和项目运行流程放进同一个命令行工具，适合减少不同项目之间的环境混乱。",
+        "audience": "使用 Python 的开发者；需要基本命令行经验",
+        "difficulty": "需要命令行",
+        "cost": "免费开源；下载依赖需要访问对应软件源",
+        "api_key": "基础使用不需要大模型 API Key",
+        "platform": "Windows / macOS / Linux",
+        "hardware": "通常不需要 GPU；磁盘和网络需求取决于项目依赖",
+        "steps": [
+          "先按官方安装文档安装 uv，并确认终端能识别它。",
+          "按官方 First steps 指南在新的测试目录初始化项目。",
+          "添加一个测试依赖并运行示例，检查项目文件与锁定文件。"
+        ],
+        "result": "一个可通过 uv 管理与重复运行的 Python 测试项目。",
+        "limitations": "不是图形界面软件；迁移现有项目之前需检查原有依赖与构建方式。",
+        "entry_url": "https://docs.astral.sh/uv/getting-started/first-steps/",
+        "entry_label": "查看入门步骤",
+        "demo": "命令行工具；无须在线账号即可做本地基础练习",
+        "sources": [
+          "https://github.com/astral-sh/uv",
+          "https://docs.astral.sh/uv/getting-started/first-steps/"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 21.28
+    },
+    {
+      "name": "paperless-ngx/paperless-ngx",
+      "url": "https://github.com/paperless-ngx/paperless-ngx",
+      "description": "A community-supported supercharged document management system: scan, index and archive all your documents",
+      "summary_zh": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
+      "summary_source": "官方文档整理 · 未安装实测",
+      "why_zh": "距上次有效快照约 24 小时，Star 净变化 +38。",
+      "language": "Python",
+      "stars": 46169,
+      "stars_today": null,
+      "snapshot_delta": 38,
+      "snapshot_hours": 24.0,
+      "topics": [
+        "ai",
+        "angular",
+        "archiving",
+        "django",
+        "dms",
+        "document-management",
+        "document-management-system",
+        "llm"
+      ],
+      "category": "办公自动化",
+      "score": 23.04,
+      "is_new": false,
+      "sources": [
+        "practical-library"
+      ],
+      "created_at": "2022-02-12T21:56:52Z",
+      "guide": {
+        "category": "办公自动化",
+        "task": "把扫描件整理成可搜索的文档档案",
+        "summary": "将纸质文件的扫描件收进自己的文档系统，建立可搜索档案。适合长期整理票据、合同副本和家庭文件。",
+        "audience": "有 NAS 或服务器经验、需要持续归档文件的人",
+        "difficulty": "需要部署",
+        "cost": "开源自托管；需要自行承担存储、备份和服务器成本",
+        "api_key": "基础归档不依赖付费大模型 Key",
+        "platform": "推荐 Docker Compose 部署，浏览器访问",
+        "hardware": "需部署环境和持久化存储；具体容量取决于文档数量",
+        "steps": [
+          "先打开官方演示，用非敏感测试资料了解流程。",
+          "决定正式使用后，按官方文档准备 Docker Compose 环境和备份。",
+          "导入一份测试扫描件，检查识别结果并尝试搜索。"
+        ],
+        "result": "能在自己的文档库里通过文字找到导入的测试文件。",
+        "limitations": "不是装完就无需维护的云服务；要自己负责备份与访问权限。公开演示会重置，请勿上传敏感文件。",
+        "entry_url": "https://demo.paperless-ngx.com",
+        "entry_label": "打开官方演示",
+        "demo": "有公开演示；仅使用非敏感测试文件",
+        "sources": [
+          "https://github.com/paperless-ngx/paperless-ngx",
+          "https://docs.paperless-ngx.com"
+        ],
+        "reviewed_at": "2026-09-24"
+      },
+      "practical_score": 17.92
     }
   ],
   "discovery_mode": "daily-hot-plus-library"
